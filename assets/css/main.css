@@ -2257,8 +2257,6 @@ line-height:1}
 .page__title+.page__meta,.page__title+.comment__date{
 margin-top:-0.5em}
 .page__lead{
--webkit-text-stroke: 0.1em black;
- color: white;
 font-family:-apple-system,BlinkMacSystemFont,"Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
 font-size:1.25em
 
