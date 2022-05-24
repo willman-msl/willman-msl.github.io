@@ -2257,10 +2257,11 @@ line-height:1}
 .page__title+.page__meta,.page__title+.comment__date{
 margin-top:-0.5em}
 .page__lead{
-  color: white;
--webkit-text-stroke: 0.5px black;
+color: white;
 font-family:-apple-system,BlinkMacSystemFont,"Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
-font-size:1.25em}
+font-size:1.25em
+-webkit-text-stroke: 0.0625em black;
+}
 .page__content h2{
 padding-bottom:0.5em;
 border-bottom:1px solid #f2f3f3}
