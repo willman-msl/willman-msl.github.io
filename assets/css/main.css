@@ -2260,7 +2260,7 @@ margin-top:-0.5em}
 color: white;
 font-family:-apple-system,BlinkMacSystemFont,"Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
 font-size:1.25em
--webkit-text-stroke: 0.25em black;
+-webkit-text-stroke: 1em black;
 }
 .page__content h2{
 padding-bottom:0.5em;
