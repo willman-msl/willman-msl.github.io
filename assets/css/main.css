@@ -2346,9 +2346,9 @@ text-shadow:1px 1px 4px rgba(0,0,0,0.5)}
 max-width:768px}
 .page__hero--overlay .page__title{
 //font-size:1.953em
-font: Arial
+font: Arial;
 //  font-size:1.25em
-font-size: 128px
+font-size: 128px;
 	-webkit-text-stroke: 2px black;
 	-webkit-text-fill-color: white;
 }
