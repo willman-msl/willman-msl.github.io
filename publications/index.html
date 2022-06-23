@@ -1,7 +1,13 @@
-<!doctype html>
+---
+title: ""
+permalink: /publications/
+layout: wide
+author_profile: true
+---
+
 <!--
-  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
-  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Minimal Mistakes Jekyll Theme 4.19.3 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
 -->
@@ -9,36 +15,28 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>  </title>
-<meta name="description" content="An amazing website.">
+<!-- begin _includes/seo.html --><title>Materials Simulation Laboratory</title>
+<meta name="description" content="Our lab employs a wide range of compuational methods, <!inlcuding quantum molecular dynamics, development of machine learning potentials, large scale atomistic simulations which are applied to a wide range of outstanding scientific problems. We use some of the world's most powerful supercomputers to solve outstanding scientific problems.Positions in the lab are extremely competitive and we select the brightest young talents and nurture them.">
 
 
+<meta name="author" content="USF MSL Laboratory">
+<meta name="viewport" content="maximum-scale=1">
 
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
-<meta property="og:site_name" content="">
-<meta property="og:title" content="">
-<meta property="og:url" content="http://0.0.0.0:4000/publications/">
-
-
-  <meta property="og:description" content="An amazing website.">
-
-
-
-
-
-
-
-
-
-
+<meta property="og:site_name" content="Parallel Software and Systems Group">
+<meta property="og:title" content="Parallel Software and Systems Group">
+<meta property="og:url" content="https:/willman-msl.github.io/">
+<meta property="og:description" content="Our lab employs a wide range of compuational methods, inlcuding quantum molecular dynamics, development of machine learning potentials, large scale atomistic simulations which are applied to a wide range of outstanding scientific problems.  We use some of the world's most powerful supercomputers to solve outstanding scientific problems. Positions in the lab are extremely competitive and we select the brightest young talents and nurture them.">
+<meta name="twitter:site" content="@mslusf1">
+<meta name="twitter:title" content="Materials Simulation Laboratory">
+<meta name="twitter:description" content="Quantum molecular dynamics, development of machine learning potentials, large scale atomistic simulations">
+<meta name="twitter:url" content="https://willman-msl.github.io/">
 
   
-
-  
-
-
-<link rel="canonical" href="http://0.0.0.0:4000/publications/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="/assets/images/home-background.png">
+<link rel="canonical" href="https://willman-msl.github.io/">
 
 
 
@@ -48,8 +46,8 @@
     "@context": "https://schema.org",
     
       "@type": "Person",
-      "name": "Your Name",
-      "url": "http://0.0.0.0:4000/"
+      "name": "MSL at the University of South Florida",
+      "url": "https://willman-msl.github.io/"
     
   }
 </script>
@@ -59,13 +57,10 @@
 
 
 
-
 <!-- end _includes/seo.html -->
 
 
-
-  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title=" Feed">
-
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Parallel Software and Systems Group Feed">
 
 <!-- https://t.co/dKP3o1e -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -76,12 +71,37 @@
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
 
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+  
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  
+    <script src="/assets/js/news.js"></script>
+  
+    <script src="/assets/js/tabs.js"></script>
+  
+    <script src="/assets/js/publications.js"></script>
+  
+   
 
 
     <!-- start custom head snippets -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.min.css" rel="stylesheet">
 
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
 
@@ -89,8 +109,9 @@
 
   </head>
 
-  <body class="layout--archive">
+  <body class="layout--splash landing">
     <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
   <ul>
     <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
     <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
@@ -102,7 +123,9 @@
 <div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
 <![endif]-->
 
-    
+    <div class="blue__border">
+  
+    </div>
 
 <div class="masthead">
   <div class="masthead__inner-wrap">
@@ -111,26 +134,17 @@
         
           <a class="site-logo" href="/"><img src="/assets/images/msl-logo.png" alt=""></a>
         
-        <a class="site-title" href="/">
-          
-          
-        </a>
-<ul class="visible-links">
-	<li class="masthead__menu-item">
-              <a href="/about/">About</a>
-        </li>
-        <li class="masthead__menu-item">   
-	      <a href="/research/">Research</a>
-            </li>
-        <li class="masthead__menu-item">
-              <a href="/publications/">Publications</a>
-            </li>
-         <li class="masthead__menu-item">
-              <a href="/software/">Software</a>
-            </li>
-         <li class="masthead__menu-item">
-              <a href="/team/">Team</a>
-            </li></ul>
+        <a class="site-title" href="/"> </a>
+
+        <ul class="visible-links">
+          <li class="masthead__menu-item"><a href="/">Home</a></li>
+          <li class="masthead__menu-item"><a href="/research/">Research</a></li>
+          <li class="masthead__menu-item"><a href="/publications/">Publications</a></li>
+          <li class="masthead__menu-item"><a href="/software/">News</a></li>
+          <li class="masthead__menu-item"><a href="/team/">Team</a></li>
+          <li class="masthead__menu-item"><a href="/team/">Openings</a></li> 
+          <li class="masthead__menu-item"><a href="/team/">Contact</a></li> 
+        </ul>
         
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">Toggle menu</span>
@@ -141,857 +155,560 @@
     </div>
   </div>
 </div>
+<p class="HP"> Publications:</p>
+<div class="feature__wrapper">
+<div class="Publications">
+       
 
+    <p><a href="https://meetings.aps.org/Meeting/SHOCK22/Session/V03.4"  > Inelastic Deformations in Shock Compressed Diamond</a><br>
+J Willman, K Nguyen-Cong, I Oleynik
+Bulletin of the American Physical Society   2022
+<p><a href="https://meetings.aps.org/Meeting/SHOCK22/Session/T04.1"  > Quantum-accurate molecular dynamics shock simulations at experimental time and length scales</a><br>
+I Oleynik, J Willman, K Nguyen-Cong
+Bulletin of the American Physical Society   2022
+<p><a href="https://meetings.aps.org/Meeting/SHOCK22/Session/C04.2"  > Phase transitions and phase diagram of silicon carbide at exoplanetary core conditions</a><br>
+K Nguyen-Cong, A Belonoshko, J Willman, S Tracy, P Kalita, T Ao, Bulletin of the American Physical Society   2022
+<p><a href="https://arxiv.org/abs/2205.01209"  > Machine Learning Interatomic Potential for Simulations of Carbon at Extreme Conditions</a><br>
+JT Willman, K Nguyen-Cong, AS Williams, AB Belonoshko, SG Moore, arXiv:2205.01209   2022
+<p><a href="https://meetings.aps.org/Meeting/MAR22/Session/T24.2"  > Inelastic Response of Diamond to Shock Compression</a><br>
+J Willman, K Nguyen-Cong, S Moore, M Wood, A Thompson, I Oleynik
+Bulletin of the American Physical Society   2022
+<p><a href="https://meetings.aps.org/Meeting/MAR22/Session/Q24.4"  > High pressure-temperature phase diagram of silicon carbide from quantum molecular dynamics</a><br>
+K Nguyen-Cong, J Willman, A Belonoshko, I Oleynik
+Bulletin of the American Physical Society   2022
+<p><a href="https://dl.acm.org/doi/abs/10.1145/3458817.3487400"  > Billion atom molecular dynamics simulations of carbon at extreme conditions and experimental time and length scales</a><br>
+K Nguyen-Cong, JT Willman, SG Moore, AB Belonoshko, R Gayatri, ...
+Proceedings of the International Conference for High Performance Computing …  5
+2021
+<p><a href="https://pubs.rsc.org/en/content/articlelanding/2021/dt/d1dt02319e/unauth"  > Crystal structure of silver pentazolates AgN<sub>5</sub> and AgN<sub>6</sub></a><br>
+AS Williams, KN Cong, JM Gonzalez, II Oleynik
+Dalton Transactions 50 (44), 16364-16370    2021
+<p><a href="https://ui.adsabs.harvard.edu/abs/2021APS..MARJ23011W/abstract"  > Probing metastability of carbon at extreme conditions</a><br>
+A Williams, K Nguyen Cong, J Willman, A Belonoshko, I Oleynik
+APS March Meeting Abstracts 2021, J23. 011    2021
+<p><a href="https://ui.adsabs.harvard.edu/abs/2021APS..MARS23001N/abstract"  > Chemistry and superconductivity of ternary HCS compounds at high pressures</a><br>
+K Nguyen Cong, A Williams, J Willman, I Oleynik
+APS March Meeting Abstracts 2021, S23. 001    2021
+<p><a href="https://ui.adsabs.harvard.edu/abs/2021APS..MARJ23005N/abstract"  > First-principles phase diagram of carbon at extreme conditions</a><br>
+K Nguyen Cong, J Willman, A Williams, A Belonoshko, M Wood, ...
+APS March Meeting Abstracts 2021, J23. 005    2021
+<p><a href="https://ui.adsabs.harvard.edu/abs/2021APS..MARF23005W/abstract"  > Quantum-accurate SNAP Carbon Potential for MD Simulations of Carbon at Extreme Conditions</a><br>
+J Willman, A Williams, K Nguyen Cong, A Belonoshko, M Wood, ...
+APS March Meeting Abstracts 2021, F23. 005    2021
+<p><a href="https://aip.scitation.org/doi/abs/10.1063/12.0001100"  > First principles molecular dynamics simulations of high-pressure melting of diamond</a><br>
+K Nguyen-Cong, AS Williams, JT Willman, AB Belonoshko, II Oleynik
+AIP Conference Proceedings 2272 (1), 070010 1
+2020
+<p><a href="https://aip.scitation.org/doi/abs/10.1063/12.0000881"  > Quantum accurate SNAP carbon potential for MD shock simulations</a><br>
+JT Willman, AS Williams, K Nguyen-Cong, AP Thompson, MA Wood, ...
+AIP Conference Proceedings 2272 (1), 070055 4
+2020
+<p><a href="https://aip.scitation.org/doi/abs/10.1063/12.0000908"  > Predictive simulations of metastable phases of carbon at high compression</a><br>
+A Williams, KN Cong, J Willman, N Goldman, I Oleynik
+AIP Conference Proceedings 2272 (1), 070054 2
+2020
+<p><a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.102.115149"  > Correlating structural, electronic, and magnetic properties of epitaxial  thin films</a><br>
+G Chen, ST Howard, AB Maghirang III, KN Cong, RAB Villaos, LY Feng, 
+Physical Review B 102 (11), 115149  18
+2020
+<p><a href="https://meetings.aps.org/Meeting/MAR20/Session/W02.3"  > Quantum-accurate SNAP Potential For Large-Scale Molecular Dynamics Simulations of Carbon at Extreme Conditions</a><br>
+J Willman, A Williams, K Nguyen-Cong, A Belonoshko, M Wood,
+Bulletin of the American Physical Society 65    2020
+<p><a href="https://meetings.aps.org/Meeting/MAR20/Session/M03.5"  > Assessing the accuracy of first-principles DFT in describing van-der-Waals interactions in energetic molecular crystals at ambient and high pressure conditions</a><br>
+I Oleynik, K Nguyen-Cong
+Bulletin of the American Physical Society 65    2020
+<p><a href="https://meetings.aps.org/Meeting/MAR20/Session/G03.4"  > Probing metastability of carbon at high pressures by predictive first-principles simulations</a><br>
+A Williams, K Nguyen-Cong, J Willman, I Oleynik
+Bulletin of the American Physical Society 65    2020
+<p><a href="https://agu.confex.com/agu/fm19/meetingapp.cgi/Paper/616212"  > Properties of Carbon under High Pressure-Temperature Conditions inside the Cores of Rocky Exoplanets</a><br>
+I Oleynik, KN Cong, J Willman, A Williams, M Wood, A Thompson,
+AGU Fall Meeting 2019   2019
+<p><a href="https://ui.adsabs.harvard.edu/abs/2019AGUFMMR22A..06B/abstract"  > Properties of Carbon under High Pressure-Temperature Conditions inside the Cores of Rocky Exoplanets</a><br>
+AB Belonoshko, I Oleynik, KN Cong, J Willman, A Williams, M Wood,
+AGU Fall Meeting Abstracts 2019, MR22A-06   2019
+<p><a href="https://pubs.acs.org/doi/abs/10.1021/acs.jpclett.9b01949"> Monolayer Modification of VTe2 and Its Charge Density Wave</a><br>
+PM Coelho, K Lasek, K Nguyen Cong, J Li, W Niu, W Liu, II Oleynik, 
+The Journal of Physical Chemistry Letters 10 (17), 4987-4993  28
+2019
+<p><a href="https://meetings.aps.org/Meeting/SHOCK19/Session/1D.19"  > First-principles molecular dynamics simulations of high-pressure phase diagram of carbon</a><br>
+K Nguyen Cong, J Willman, A Williams, A Belonoshko, I Oleynik
+Bulletin of the American Physical Society 64    2019</p>
+<p><a href="https://pubs.acs.org/doi/abs/10.1021/acs.jpcc.9b04281"> Charge Density Wave State Suppresses Ferromagnetic Ordering in VSe2 Monolayers</a><br>
+PM Coelho, K Nguyen Cong, M Bonilla, S Kolekar, MH Phan, J Avila, 
+The Journal of Physical Chemistry C 123 (22), 14089-14096 110
+2019</p>
+<p><a href="https://link.springer.com/chapter/10.1007/978-3-030-05600-1_2"  > Computational discovery of new high-nitrogen energetic materials
+BA Steele, II Oleynik
+Computational Approaches for Chemistry Under Extreme Conditions, 25-52  5
+2019
 
-    <div class="initial-content">
+<p><a href="https://ui.adsabs.harvard.edu/abs/2019APS..MARA14003N/abstract"  > Electronic properties and charge density wave transition in single-layer VSe2</a> <br>
+K Nguyen-Cong, P Neto, M Batzill, I Oleynik APS March Meeting Abstracts 2019, A14. 003</p>  
+
+      <p><a href="https://doi.org/10.1063/1.5018434"  >Novel phases and superconductivity of tin sulfide compounds</a><br>
+      J. M. Gonzalez, K. Nguyen-Cong, B. A. Steele, and I. I. Oleynik, J. Chem. Phys. 146, 194701 (2018)</p>
       
+     
+      <p><a href="http://dx.doi.org/10.1063/1.4971510" >Cesium Pentazolate: A New Nitrogen-rich Energetic Material</a><br>
+      B. A. Steele, E. Stavrous, V. B. Prakapenka, H. Radousky, J. Zaug, J. C. Crowhurst, and I. I. Oleynik, AIP Conf. Proc. 1793, 40016 (2017)</p>
+    
 
+      <p><a href="http://dx.doi.org/10.1063/1.4971499" >First-principles Investigation Of Iron Pentacarbonyl Molecular Solid Phases At High Pressure</a>
+      K. N. Cong, B. A. Steele, A. C. Landerville, and I. I. Oleynik, AIP Conf. Proc. 1793, 70018 (2017)</p>
+    
 
+      <p><a href="http://dx.doi.org/10.1063/1.4971606" >Experimental And Theoretical Investigation Of Pressure-dependent Raman Spectra Of Triaminotrinitrobenzene (TATB) At High Pressures</a><br>
+      A. C. Landerville, J. C. Crowhurst, C. D. Grant, J. M. Zaug, and I. Oleynik, AIP Conf. Proc. 1793, 40005 (2017)</p>
+    
 
-<div id="main" role="main">
+      <p><a href=" http://dx.doi.org/10.1103/PhysRevE.96.012906" >Force Distribution In A Granular Medium Under Dynamic Loading</a><br>
+      V. A. Danylenko, S. V. Mykulyak, V. O. Polyakovskyi, V. V. Kulich, and I. I. Oleynik, Phys. Rev. E 96, 12906 (2017)</p>
+    
+ 
+      <p><a href="http://dx.doi.org/10.1021/acs.chemmater.6b04538" >High-Pressure Synthesis Of A Pentazolate Salt</a> <br>
+      B. A. Steele, E. Stavrou, J. C. Crowhurst, J. M. Zaug, V. B. Prakapenka, and I. I. Oleynik, Chem. Mater. 29, 735 (2017)</p>
+   
   
-  <div class="sidebar sticky">
+
+    
+      <p><a href="http://dx.doi.org/10.1063/1.4971719" >New Crystal Phase Of Ammonium Nitrate: First-principles Prediction And Characterization</a> <br>
+      B. A. Steele, and I. I. Oleynik, AIP Conf. Proc. 1793, 130008 (2017) </p>
+    
+ 
+      <p><a href="http://dx.doi.org/10.1021/acs.jpca.7b08974" >Novel Potassium Polynitrides At High Pressures</a> <br>
+      B. A. Steele, and I. I. Oleynik, J. Phys. Chem. A 121, 8955 (2017)</p>
+   
+    
+
+    
+      <p><a href="http://dx.doi.org/10.1063/1.5004416" >Novel Rubidium Poly-nitrogen Materials At High Pressure</a><br>
+      A. S. Williams, B. A. Steele, and I. I. Oleynik, J. Chem. Phys. 147, 234701 (2017)</p>
+    
+  
+      <p><a href="http://dx.doi.org/10.1021/acs.jpca.6b12900" >Pentazole And Ammonium Pentazolate: Crystalline Hydro-Nitrogens At High Pressure</a><br>
+      B. A. Steele and I. I. Oleynik,  J. Phys. Chem. A 121, 1808 (2017)</p>
+    
+  
+      <p><a href="http://dx.doi.org/10.1063/1.4971455" >Preface: 19th Biennial APS Conference On Shock Compression Of Condensed Matter</a><br>
+      R. Chau, T. Germann, I. Oleynik, S. Peiris, R. Ravelo, and T. Sewell, AIP Conf. Proc. 1793, 10001 (2017)</p>
+    
+  
+      <p><a href="http://dx.doi.org/10.1021/acs.jpcc.6b10956" >Sensor Effect In Oxide Films With A Large Concentration Of Conduction Electrons</a><br>
+      M. A. Kozhushner, V. L. Bodneva, I. I. Oleynik, T. V. Belysheva, M. I. Ikim, and L. I. Trakhtenberg,  J. Phys. Chem. C 121, 6940 (2017)</p>
+    
+  
+      <p><a href="http://dx.doi.org/10.1063/1.4983040" >Structural And Spectroscopic Studies Of Nitrogen-carbon Monoxide Mixtures: Photochemical Response And Observation Of A Novel Phase</a><br>
+      J. A. Ciezak-Jenkins, B. A. Steele, G. M. Borstad, and I. I. Oleynik,  J. Chem. Phys. 146, 184309 (2017)</p>
+    
+  
+      <p><a href="http://dx.doi.org/10.1063/1.4971541" >Ternary Inorganic Compounds Containing Carbon, Nitrogen, And Oxygen At High Pressures</a><br>
+      B. A. Steele and I. I. Oleynik, Inorg. Chem. 56, 13321 (2017)</p>
+    
+  
+      <p><a href="http://dx.doi.org/10.1021/acs.inorgchem.7b02102" >Vibrational And Thermal Properties Of Β-HMX And TATB From Dispersion Corrected Density Functional Theory</a><br>
+      A. C. Landerville and I. I. Oleynik, AIP Conf. Proc. (2017), p. 50007</p>
+    
+  
+      <p><a href="http://dx.doi.org/10.1063/1.4971597" >Vibrational And Thermophysical Properties Of PETN From First Principles</a><br>
+       J. M. Gonzalez, A. C. Landerville, and I. I. Oleynik, AIP Conf. Proc. 1793, 70009 (2017)</p>
+    
+  
+      <p><a href="http://dx.doi.org/10.1103/PhysRevB.94.125443" >Layer-dependent properties of SnS<sub>2</sub> and SnSe<sub>2</sub> two-dimensional materials</a><br>
+      J. M. Gonzalez and I. I. Oleynik, Phys. Rev. B 94, 125443 (2016)</p>
+    
+  
+      <p><a href="http://dx.doi.org/10.1016/j.cplett.2015.11.008" >Sodium Pentazolate: A Nitrogen Rich High Energy Density Material</a><br>
+      B. A. Steele and I. I. Oleynik, Chem. Phys. Lett. 643, 21 (2016)</p>
+    
+  
+      <p><a href="" >Cesium Pentazolate: A New Nitrogen-rich Energetic Material</a><br>
+      B. A. Steele, E. Stavrou, V. B. Prakapenka, H. B. Radousky, J. M. Zaug, J. C. Crowhurst, and I. I. Oleynik, Lawrence Livermore Natl. Lab. Rep. LLNL-PROC-677378 (2015)</p>
+    
+  
+      <p><a href="http://dx.doi.org/10.1021/acs.jpcc.5b01410" >Inhomogeneous Charge Distribution In Semiconductor Nanoparticles</a><br>
+      M. A. Kozhushner, B. V. Lidskii, I. I. Oleynik, V. S. Posvyanskii, and L. I. Trakhtenberg, J. Phys. Chem. C 119, 16286 (2015)</p>
+    
+  
+      <p><a href="http://dx.doi.org/10.1016/j.cplett.2015.11.008" >Sodium pentazolate: A nitrogen rich high energy density material</a><br>
+      B. A. Steele and I. I. Oleynik, Chem. Phys. Lett. 643, 21 (2016)</p>
+    
+  
+      <p><a href="http://dx.doi.org/10.1063/1.4937420" >New phase of ammonium nitrate: A monoclinic distortion of AN-IV</a><br>
+      B. A. Steele and I. I. Oleynik, J. Chem. Phys. 143, 234705 (2015)</p>
+
+    
+      <p><a href="http://dx.doi.org/10.1103/PhysRevE.90.033312" >Laminar, cellular, transverse, and multiheaded pulsating detonations in condensed phase energetic materials from molecular dynamics simulations</a> <br>
+      V. V. Zhakhovsky, M. M. Budzevich, A. C. Landerville, I. I. Oleynik, and C. T. White, Phys. Rev. E 90, 033312 (2014)</p>
+   
+  
+      <p><a href="http://dx.doi.org/10.1021/jp502619n" >Ammonium Azide under High Pressure: A Combined Theoretical and Experimental Study</a><br>
+      J. C. Crowhurst, J. M. Zaug, H. B. Radousky, B. A. Steele, A. C. Landerville, and I. I. Oleynik, J. Phys. Chem. A 118, 8695 (2014)</p>
+    
+  
+      <p><a href="http://dx.doi.org/10.1021/jp501989k" >Effect of Temperature and Nanoparticle Size on Sensor Properties of Nanostructured Tin Dioxide Films</a> <br>
+      M. A. Kozhushner, L. I. Trakhtenberg, V. L. Bodneva, T. V. Belisheva, A. C. Landerville, and I. I. Oleynik, J. Phys. Chem. C 118, 11440 (2014)</p>
+   
+ 
+      <p><a href="http://dx.doi.org/10.1088/1742-6596/500/16/162005" >Density Functional Theory Investigation of Sodium Azide at High Pressure</a><br>
+      B. A. Steele, A. C. Landerville, and I. I. Oleynik, J. Phys. Conf. Ser. 500, 162005 (2014)</p>
+    
+  
+      <p><a href="http://dx.doi.org/10.1088/1742-6596/500/16/162006" >Ammonium Azide under Hydrostatic Compression</a><br>
+      A. C. Landerville, B. C. Steele, and I. I. Oleynik, J. Phys. Conf. Ser. 500, 162006 (2014) </p>
+    
+  
+      <p><a href="http://dx.doi.org/10.1088/1742-6596/500/17/172008" >Evolution of Elastic Precursor and Plastic Shock Wave in Copper via Molecular Dynamics Simulations</a><br>
+      R. Perriot, V. V. Zhakhovsky, N. A. Inogamov, and I. I. Oleynik, J. Phys. Conf. Ser. 500, 172008 (2014) </p>
+    
+ 
+      <p><a href="http://dx.doi.org/10.1088/1742-6596/500/17/172007" >Elastic-Plastic Collapse of Super-Elastic Shock Waves in Face-Centered-Cubic Solids</a><br>
+      V. V. Zhakhovsky, N. A. Inogamov, B. J. Demaske, I. I. Oleynik, and C. T. White, J. Phys. Conf. Ser. 500, 172007 (2014) </p>
+    
+  
+      <p><a href="http://dx.doi.org/10.1088/1742-6596/500/17/172006" >Nano-Scale Spinning Detonation in a Condensed Phase Energetic Material</a><br>
+      V. V. Zhakhovsky, M. M. Budzevich, A. C. Landerville, I. I. Oleynik, and C. T. White, J. Phys. Conf. Ser. 500, 172006 (2014)</p>
+    
+  
+      <p><a href="http://dx.doi.org/10.1088/1742-6596/500/17/172005" >From Laminar to Turbulent Detonations in Energetic Materials from Molecular Dynamics Simulations</a><br>
+      V. V. Zhakhovsky, M. M. Budzevich, A. C. Landerville, I. I. Oleynik, and C. T. White, J. Phys. Conf. Ser. 500, 172005 (2014)</p>
+    
+ 
+      <p><a href="http://dx.doi.org/10.1088/1742-6596/500/19/192023" >Two-Temperature Hydrodynamic Expansion and Coupling of Strong Elastic Shock with Supersonic Melting Front Produced by Ultrashort Laser Pulse</a><br>
+      N. A. Inogamov, V. V. Zhakhovsky, V. A. Khokhlov, B. J. Demaske, K. V Khishchenko, and I. I. Oleynik, J. Phys. Conf. Ser. 500, 192023 (2014)</p>
+    
+ 
+      <p><a href="http://dx.doi.org/10.1088/1742-6596/500/11/112070" >Surface Nano-Structuring Produced by Spallation of Metal Irradiated by an Ultrashort Laser Pulse</a><br>
+      N. A. Inogamov, V. V. Zhakhovsky, S. I. Ashitkov, Y. N. Emirov, A. Y. Faenov, T. A. Pikuz, M. Ishino, M. Kando, N. Hasegawa, M. Nishikino, T. Kawachi, M. B. Agranat, A. V Andriash, S. E. Kuratov, and I. I. Oleynik, J. Phys. Conf. Ser. 500, 112070 (2014) </p>
+    
+  
+      <p><a href="http://dx.doi.org/10.1088/1742-6596/510/1/012041" >Ultrafast Lasers and Solids in Highly Excited States: Results of Hydrodynamics and Molecular Dynamics Simulations&nbsp;</a><br>
+      N. A. Inogamov, V. V. Zhakhovsky, V. A. Khokhlov, S. I. Ashitkov, Y. N. Emirov, K. V Khichshenko, A. Y. Faenov, T. A. Pikuz, M. Ishino, M. Kando, N. Hasegawa, M. Nishikino, P. S. Komarov, B. J. Demaske, M. B. Agranat, S. I. Anisimov, T. Kawachi, and I. I. Oleynik, J. Phys. Conf. Ser. 510, 012041 (2014) </p>
+    
+  
+      <p><a href="http://dx.doi.org/10.1016/j.engfailanal.2013.12.009" >Surface Nanodeformations Caused by Ultrashort Laser Pulse&nbsp;</a><br>
+      N. A. Inogamov, V. V. Zhakhovsky, S. I. Ashitkov, Y. N. Emirov, A. Y. Faenov, Y. V. Petrov, V. A. Khokhlov, M. Ishino, B. J. Demaske, M. Tanaka, N. Hasegawa, M. Nishikino, S. Tamotsu, T. A. Pikuz, I. Y. Skobelev, T. Ohba, T. Kaihori, Y. Ochi, T. Imazono, Y. Fukuda, M. Kando, Y. Kato, T. Kawachi, S. I. Anisimov, M. B. Agranat, I. I. Oleynik, and V. E. Fortov, Eng. Fail. Anal. (2014)</p>
+    
+ 
+      <p><a href="http://dx.doi.org/10.1002/ctpp.201310049" >Electron-Ion Relaxation, Phase Transitions, and Surface Nano-Structuring Produced by Ultrashort Laser Pulses in Metals&nbsp;</a><br>
+      N. A. Inogamov, V. V. Zhakhovsky, Y. V. Petrov, V. A. Khokhlov, S. I. Ashitkov, K. V. Khishchenko, K. P. Migdal, D. K. Ilnitsky, Y. N. Emirov, P. S. Komarov, V. V. Shepelev, C. W. Miller, I. I. Oleynik, M. B. Agranat, A. V. Andriyash, S. I. Anisimov, and V. E. Fortov, Contrib. to Plasma Phys. 53, 796 (2013) </p>
+    
+  
+      <p><a href="http://dx.doi.org/10.1103/PhysRevB.87.054109" >Ultrashort Shock Waves in Nickel Induced by Femtosecond Laser Pulses&nbsp;</a><br>
+      B. J. Demaske, V. V. Zhakhovsky, N. A. Inogamov, and I. I. Oleynik, Phys. Rev. B 87, 054109 (2013)</p>
+    
+ 
+      <p><a href="http://dx.doi.org/10.1021/jp311847j" >Theory of Sensing Response of Nanostructured Tin-Dioxide Thin Films to Reducing Hydrogen Gas&nbsp;</a><br>
+      M. A. Kozhushner, L. I. Trakhtenberg, A. C. Landerville, and I. I. Oleynik, J. Phys. Chem. C 117, 11562 (2013)</p>
+    
+ 
+      <p><a href="http://dx.doi.org/10.1103/PhysRevB.88.064101" >Screened Environment-Dependent Reactive Empirical Bond-Order Potential for Atomistic Simulations of Carbon Materials</a><br>
+      R. Perriot, X. Gu, Y. Lin, V. V. Zhakhovsky, and I. I. Oleynik, Phys. Rev. B 88, 64101 (2013) </p>
+    
+  
+      <p><a href="http://dx.doi.org/10.1063/1.4739864" >Super-Elastic Response of Metals to Laser-Induced Shock Waves&nbsp;</a><br>
+      V. V. Zhakhovsky, B. J. Demaske, N. A. Inogamov, V. A. Khokhlov, S. I. Ashitkov, M. B. Agranat, and I. I. Oleynik, AIP Conf. Proc. 102, 102 (2012) </p>
+    
+  
+      <p><a href="http://dx.doi.org/10.1063/1.3686502" >Single Two-Zone Elastic-Plastic Shock Waves in Solids&nbsp;</a><br>
+      V. V. Zhakhovsky, M. M. Budzevich, N. Inogamov, C. T. White, and I. I. Oleynik, AIP Conf. Proc. 1232, 1227 (2012)</p>
+    
+  
+      <p><a href="http://dx.doi.org/10.1063/1.3686489" >Shock Compression of Diamond: Molecular Dynamics Simulations Using Different Interatomic Potentials&nbsp;</a><br>
+      R. Perriot, Y. Lin, V. V. Zhakhovsky, N. Pineau, J. H. Los, J.-B. Maillet, L. Soulard, C. T. White, and I. I. Oleynik, AIP Conf. Proc. 1175, 1175 (2012) </p>
+    
+  
+      <p><a href="http://dx.doi.org/10.1063/1.3686495" >First-Principles Thermodynamics of Energetic Materials&nbsp;</a><br>
+      A. C. Landerville, M. W. Conroy, Y. Lin, M. M. Budzevich, C. T. White, and I. I. Oleynik, AIP Conf. Proc. 1202, 1199 (2012)</p>
+    
+  
+      <p><a href="http://dx.doi.org/10.1134/S1063776112100056" >Vibrational Excitation of a Molecule by a Resonance Current&nbsp;</a><br>
+      M. A. Kozhushner and I. I. Oleinik, J. Exp. Theor. Phys. 115, 759 (2012) </p>
+    
+  
+      <p><a href="http://dx.doi.org/10.1063/1.4739912" >Two-Temperature Thermodynamic and Kinetic Properties of Transition Metals Irradiated by Femtosecond Lasers&nbsp;</a><br>
+      N. A. Inogamov, Y. V. Petrov, V. V. Zhakhovsky, V. a. Khokhlov, B. J. Demaske, S. I. Ashitkov, K. V. Khishchenko, K. P. Migdal, M. B. Agranat, S. I. Anisimov, V. E. Fortov, and I. I. Oleynik, AIP Conf. Proc. 608, 593 (2012) </p>
+    
+ 
+      <p><a href="http://dx.doi.org/10.1063/1.3686425" >Ultrashort Elastic and Plastic Shockwaves in Aluminum&nbsp;</a><br>
+      N. Inogamov, V. Khokhlov, Y. Petrov, S. Anisimov, V. V. Zhakhovsky, B. J. Demaske, I. I. Oleynik, S. I. Ashitkov, K. V. Khishchenko, M. Agranat, V. Fortov, and C. T. White, AIP Conf. Proc. 912, 909 (2012) </p>
+    
+  
+      <p><a href="http://dx.doi.org/10.1063/1.3686486" >MD Simulations of Laser-Induced Ultrashort Shock Waves in Nickel&nbsp;</a><br>
+      B. J. Demaske, V. V. Zhakhovsky, N. Inogamov, C. T. White, and I. I. Oleynik, AIP Conf. Proc. 1166, 1163 (2012)</p>
+    
+ 
+      <p><a href="http://dx.doi.org/10.1063/1.3686520" >Evolution of Metastable Elastic Shock Waves in Nickel&nbsp;</a><br>
+      B. J. Demaske, V. V. Zhakhovsky, C. T. White, and I. I. Oleynik, AIP Conf. Proc. 1306, 1303 (2012)</p>
+    
+  
+      <p><a href="http://dx.doi.org/10.1063/1.3686498" >A New Nickel EAM Potential for Atomistic Simulations of Ablation, Spallation, and Shock-Wave Phenomena&nbsp;</a><br>
+      B. J. Demaske, V. V. Zhakhovsky, C. T. White, and I. I. Oleynik, AIP Conf. Proc. 1214, 1211 (2012) </p>
+    
+
+      <p><a href="http://dx.doi.org/10.1063/1.3686514" >Effect of Reactive Chemistry on Mechanisms of Condensed Phase Detonation&nbsp;</a> <br>
+      M. M. Budzevich, V. V. Zhakhovsky, C. T. White, and I. I. Oleynik, AIP Conf. Proc. 1282, 1279 (2012) </p>
+   
+
+      <p><a href="http://dx.doi.org/10.1063/1.4739866" >Strength of Metals in Liquid and Solid States at Extremely High Tension Produced by Femtosecond Laser Heating&nbsp;</a><br>
+      S. I. Ashitkov, N. A. Inogamov, P. S. Komarov, V. V. Zhakhovsky, I. I. Oleynik, M. B. Agranat, G. I. Kanel, and V. E. Fortov, AIP Conf. Proc. 120, 120 (2012) </p>
+    
+
+      <p><a href="http://dx.doi.org/10.1063/1.3686511" >Shock-Induced Phase Transitions in Metals: Recrystallization of Supercooled Melt and Melting of Overheated Solids&nbsp;</a><br>
+      M. M. Budzevich, V. V. Zhakhovsky, C. T. White, and I. I. Oleynik, AIP Conf. Proc. 1270, 1267 (2012) </p>
+    
+
+      <p><a href="http://dx.doi.org/10.1063/1.4739475" >Atomic and Electronic Structure of Graphene/Sn-Ni(111) and Graphene/Sn-Cu(111) Surface Alloy Interfaces&nbsp;</a><br>
+      L. Adamska, R. Addou, M. Batzill, and I. I. Oleynik, Appl. Phys. Lett. 101, 051602 (2012) </p>
+    
+ 
+      <p><a href="http://dx.doi.org/10.1134/S0021364012040042" >Formation of Nanocavities in the Surface Layer of an Aluminum Target Irradiated by a Femtosecond Laser Pulse&nbsp;</a> <br>
+      S. I. Ashitkov, N. A. Inogamov, V. V. Zhakhovskii, Y. N. Emirov, M. B. Agranat, I. I. Oleinik, S. I. Anisimov, and V. E. Fortov, JETP Lett. 95, 176 (2012) </p>
+   
+ 
+      <p><a href="http://dx.doi.org/10.1103/PhysRevB.85.195443" >Atomic and Electronic Structure of Simple Metal/Graphene and Complex Metal/Graphene/Metal Interfaces&nbsp;</a><br>
+      L. Adamska, Y. Lin, A. J. Ross, M. Batzill, and I. I. Oleynik, Phys. Rev. B 85, 195443 (2012) </p>
+    
+
+      <p><a href="http://dx.doi.org/10.1103/PhysRevLett.109.125505" >Evolution of Shock-Induced Orientation-Dependent Metastable States in Crystalline Aluminum&nbsp;</a><br>
+      M. M. Budzevich, V. V. Zhakhovsky, C. T. White, and I. I. Oleynik, Phys. Rev. Lett. 109, 125505 (2012) </p>
+    
+
+      <p><a href="http://dx.doi.org/10.1063/1.3686488" >Shock-Induced Phase Transition in Diamond&nbsp;</a><br>
+      Y. Lin, R. Perriot, V. V. Zhakhovsky, X. Gu, C. T. White, I. I. Oleynik, and V. V. Zhakovsky, AIP Conf. Proc. 1426, 1171 (2011) </p>
+    
+
+      <p><a href="http://dx.doi.org/10.1103/PhysRevLett.107.135502" >Two-Zone Elastic-Plastic Single Shock Waves in Solids&nbsp;</a><br>
+      V. V. Zhakhovsky, M. M. Budzevich, N. A. Inogamov, I. I. Oleynik, and C. T. White, Phys. Rev. Lett. 107, 135502 (2011) </p>
+    
+
+      <p><a href="http://dx.doi.org/10.1021/nl103383b" >Graphene Growth on Ni(111) by Transformation of a Surface Carbide.&nbsp;</a><br>
+      J. Lahiri, T. Miller, L. Adamska, I. I. Oleynik, and M. Batzill, Nano Lett. 11, 518 (2011) </p>
+    
+
+      <p><a href="http://dx.doi.org/10.1088/1367-2630/13/2/025001" >Graphene Growth and Stability at Nickel Surfaces&nbsp;</a><br>
+      J. Lahiri, T. S Miller, A. J Ross, L. Adamska, I. I. Oleynik, and M. Batzill, New J. Phys. 13, 025001 (2011) </p>
+    
+
+      <p><a href="http://dx.doi.org/10.1063/1.3361407" >Hydrostatic and Uniaxial Compression Studies of 1,3,5-Triamino- 2,4,6-Trinitrobenzene Using Density Functional Theory with van der Waals Correction&nbsp;</a><br>
+      M. M. Budzevich, A. C. Landerville, M. W. Conroy, Y. Lin, I. I. Oleynik, and C. T. White, J. Appl. Phys. 107, 113524 (2010) </p>
+    
+
+      <p><a href="http://dx.doi.org/10.1038/nnano.2010.53" >An Extended Defect in Graphene as a Metallic Wire&nbsp;</a><br>
+      J. Lahiri, Y. Lin, P. Bozkurt, I. I. Oleynik, and M. Batzill, Nat. Nanotechnol. 5, 326 (2010) </p>
+    
+
+      <p><a href="http://dx.doi.org/10.1063/1.3526754" >Equations of State for Energetic Materials from Density Functional Theory with van der Waals, Thermal, and Zero-point Energy Corrections&nbsp;</a><br>
+      A. C. Landerville, M. W. Conroy, M. M. Budzevich, Y. Lin, C. T. White, and I. I. Oleynik, Appl. Phys. Lett. 97, 251908 (2010) </p>
+    
+
+      <p><a href="http://dx.doi.org/10.1103/PhysRevB.81.035404" >Electron-Plasmon Interactions in Resonant Molecular Tunnel Junctions&nbsp;</a><br>
+      L. Adamska, M. A. Kozhushner, and I. I. Oleynik, Phys. Rev. B 81, 035404 (2010) </p>
+    
+
+      <p><a href="http://dx.doi.org/10.1063/1.3507095" >Molecular Dynamics Simulations of Femtosecond Laser Ablation and Spallation of Gold&nbsp;</a><br>
+      B. J. Demaske, V. V. Zhakhovsky, N. A. Inogamov, I. I. Oleynik, and C. Phipps, AIP Conf. Proc. 1278, 121 (2010) </p>
+    
+  
+      <p><a href="http://dx.doi.org/10.1103/PhysRevB.82.064113" >Ablation and Spallation of Gold Films Irradiated by Ultrashort Laser Pulse&nbsp;</a><br>
+      B. J. Demaske, V. V. Zhakhovsky, N. A. Inogamov, and I. I. Oleynik, Phys. Rev. B 82, 64113 (2010) </p>
+    
+  
+      <p><a href="http://dx.doi.org/10.1021/jz900026j" >Prediction of Isothermal Equation of State of an Explosive Nitrate Ester by van der Waals Density Functional Theory&nbsp;</a><br>
+      A. C. Landerville, M. W. Conroy, I. I. Oleynik, and C. T. White, J. Phys. Chem. Lett. 1, 346 (2010) </p>
+    
+ 
+      <p><a href="http://dx.doi.org/10.1038/nchem.392" >Rectification and Stability of a Single Molecular Diode with Controlled Orientation&nbsp;</a><br>
+      J. Hihath, Y. Lee, L. Yu, L. Adamska, M. A. Kozhushner, I. I. Oleynik, and N. Tao, Nat. Chem. 1, 635 (2009) </p>
+    
+
+      <p><a href="http://dx.doi.org/10.1557/PROC-1185-II05-04" >Computational Nanomechanics of Graphene Membranes&nbsp;</a><br>
+      R. Perriot, X. Gu, and I. I. Oleynik, MRS Proc. 1185 (2009) </p>
+    
+ 
+      <p><a href="http://dx.doi.org/10.1021/jp809843k" >Density Functional Theory Calculations of Solid Nitromethane under Hydrostatic and Uniaxial Compressions with Empirical van der Waals Correction&nbsp;</a><br>
+      M. W. Conroy, I. I. Oleynik, S. V Zybin, and C. T. White, J. Phys. Chem. A 113, 3610 (2009) </p>
+    
+ 
+      <p><a href="http://dx.doi.org/10.1063/1.3295177" >Physical and Chemical Properties of a New Energetic Material Si-PETN&nbsp;</a><br>
+      Y. Lin, M. M. Budzevich, A. C. Landerville, I. I. Oleynik, and C. T. White, AIP Conf. Proc. 1195, 474 (2009) </p>
+    
+
+      <p><a href="http://dx.doi.org/10.1063/1.3295266" >Reactive Molecular Dynamics of Detonating PETN&nbsp;</a><br>
+      A. C. Landerville, C. T. White, and I. I. Oleynik, AIP Conf. Proc. 1195, 813 (2009) </p>
+    
+ 
+      <p><a href="http://dx.doi.org/10.1063/1.3295260" >Molecular Dynamics Simulations of Shock-Induced Defect Healing in Silicon&nbsp;</a><br>
+      X. Gu, Y. Lin, I. I. Oleynik, and C. T. White, AIP Conf. Proc. 1195, 793 (2009) </p>
+    
+
+      <p><a href="http://dx.doi.org/10.1063/1.3295196" >Hydrostatic Equation of State and Anisotropic Constitutive Relationships in 1,3,5-Triamino-2,4,6-Trinitrobenzene (TATB)&nbsp;</a><br>
+      M. Budzevich, M. Conroy, A. Landerville, Y. Lin, I. Oleynik, and C. T. White, AIP Conf. Proc. 1195, 545 (2009) </p>
+    
+ 
+      <p><a href="http://dx.doi.org/10.1063/1.3295267" >First-Principles Investigation of Reactive Molecular Dynamics in Detonating RDX and TATB&nbsp;</a><br>
+      I. I. Oleynik, A. C. Landerville, and C. T. White, AIP Conf. Proc. 817, 817 (2009) </p>
+    
+ 
+      <p><a href="http://dx.doi.org/10.1021/jp905969y" >Reactive Molecular Dynamics of Hypervelocity Collisions of PETN Molecules&nbsp;</a><br>
+      A. C. Landerville, I. I. Oleynik, and C. T. White, J. Phys. Chem. A 113, 12094 (2009) </p>
+    
+
+      <p><a href="http://dx.doi.org/10.1063/1.3295179" >First-Principles Studies of Hydrostatic and Uniaxial Compression of a New Energetic Material -an Energetic Nitrate Ester&nbsp;</a><br>
+      M. W. Conroy, a. C. Landerville, I. I. Oleynik, and C. T. White, AIP Conf. Proc. 1195, 482 (2009) </p>
+    
+
+      <p><a href="http://dx.doi.org/10.1103/PhysRevB.78.180101" >Shear Stresses in Shock-Compressed Diamond from Density Functional Theory&nbsp;</a><br>
+      I. I. Oleynik, A. Landerville, S. V Zybin, M. L. Elert, and C. T. White, Phys. Rev. B 78, (2008) </p>
+    
+ 
+      <p><a href="http://dx.doi.org/10.1103/PhysRevB.77.094107" >First-Principles Investigation of Anisotropic Constitutive Relationships in Pentaerythritol Tetranitrate&nbsp;</a><br>
+      M. Conroy, I. Oleynik, S. Zybin, and C. White, Phys. Rev. B 77, 094107 (2008) </p>
+    
+
+      <p><a href="http://dx.doi.org/10.1063/1.2973689" >Density Functional Theory Calculations of Anisotropic Constitutive Relationships in Alpha-Cyclotrimethylenetrinitramine&nbsp;</a><br>
+      M. W. Conroy, I. I. Oleynik, S. V. Zybin, and C. T. White, J. Appl. Phys. 104, 113501 (2008) </p>
+    
+
+      <p><a href="http://dx.doi.org/10.1098/rsta.2007.2152" >A Mechanism for Crystal Twinning in the Growth of Diamond by Chemical Vapour Deposition&nbsp;</a><br>
+      J. E. Butler and I. I. Oleynik, Philos. Trans. A. Math. Phys. Eng. Sci. 366, 295 (2008) </p>
+    
+ 
+      <p><a href="http://dx.doi.org/10.1103/PhysRevB.78.180101" >Shear Stresses in Shock-Compressed Diamond from Density Functional Theory&nbsp;</a><br>
+      I. I. Oleynik, A. C. Landerville, S. V Zybin, M. L. Elert, and C. T. White, Phys. Rev. B 78, 180101 (2008) </p>
+    
+
+      <p><a href="http://dx.doi.org/10.1063/1.2833044" >Molecular Dynamics Simulations of an Anomalous Response of Diamond to Shock Compression&nbsp;</a><br>
+      K. McLaughlin, I. I. Oleynik, S. V. Zybin, M. L. Elert, and C. T. White, AIP Conf. Proc. 955, 321 (2007) </p>
+    
+ 
+      <p><a href="http://dx.doi.org/10.1063/1.2833092" >First-Principles Reactive Molecular Dynamics of Chemistry in Detonating Energetic Materials&nbsp;</a><br>
+      A. Landerville, I. I. Oleynik, M. A. Kozhushner, and C. T. White, AIP Conf. Proc. 955, 447 (2007) </p>
+    
+
+      <p><a href="http://dx.doi.org/10.1063/1.2833057" >Anisotropic Constitutive Relationships in Energetic Materials: PETN and HMX&nbsp;</a><br>
+      M. Conroy, I. I. Oleynik, S. V. Zybin, and C. T. White, AIP Conf. Proc. 955, 361 (2007) </p>
+    
+
+      <p><a href="http://dx.doi.org/10.1063/1.2833073" >Anisotropic Constitutive Relationships in Energetic Materials: Nitromethane and RDX&nbsp;</a><br>
+      I. I. Oleynik, M. Conroy, and C. T. White, AIP Conf. Proc. 955, 401 (2007) </p>
+    
+
+      <p><a href="http://dx.doi.org/10.1016/j.pmatsci.2006.10.009" >Interface Effects in Spin-Dependent Tunneling&nbsp;</a><br>
+      E. Y. Tsymbal, K. D. Belashchenko, J. Velev, S. S. Jaswal, M. Vanschilfgaarde, I. I. Oleynik, and D. A. Stewart, Prog. Mater. Sci. 52, 401 (2007) </p>
+    
+
+      <p><a href="http://dx.doi.org/10.1063/1.2263350" >Shear Stresses in Shock-Compressed Covalent Solids&nbsp;</a> <br>
+      I. I. Oleynik, S. V. Zybin, M. L. Elert, and C. T. White, AIP Conf. Proc. 845, 417 (2006) </p>
+   
+
+      <p><a href="http://dx.doi.org/10.1063/1.2263349" >Nanoscale Molecular Dynamics Simulaton of Shock Compression of Silicon&nbsp;</a><br>
+      I. I. Oleynik, S. V Zybin, M. L. Elert, and C. T. White, AIP Conf. Proc. 845, 413 (2006) </p>
+    
+ 
+      <p><a href="http://dx.doi.org/10.1103/PhysRevLett.96.096803" >Rectification Mechanism in Diblock Oligomer Molecular Diodes&nbsp;</a><br>
+      I. I. Oleynik, M. A. Kozhushner, V. S. Posvyanskii, and L. Yu, Phys. Rev. Lett. 96, 096803 (2006) </p>
+    
+
+      <p><a href="http://dx.doi.org/10.1063/1.2263387" >Energetic Materials at High Compression: First-Principles Density Functional Theory and Reactive Force Field Studies&nbsp;</a><br>
+      I. I. Oleynik, M. Conroy, S. V Zybin, L. Zhang, A. C. Van Duin, W. A. Goddard, and C. T. White, AIP Conf. Proc. 845, 573 (2006) </p>
+    
+ 
+      <p><a href="http://dx.doi.org/10.1103/PhysRevB.74.165103" >Bound States of Tunneling Electrons in Molecular Chains&nbsp;</a><br>
+      M. A. Kozhushner, V. S. Posvyanskii, and I. I. Oleynik, Phys. Rev. B 74, 165103 (2006) </p>
+    
+
+      <p><a href="http://dx.doi.org/10.1016/j.chemphys.2005.06.023" >Tunneling and Resonant Conductance in One-Dimensional Molecular Structures&nbsp;</a><br>
+      M. A. Kozhushner, V. S. Posvyanskii, and I. I. Oleynik, Chem. Phys. 319, 368 (2005) </p>
+    
+ 
+      <p><a href="http://dx.doi.org/10.1103/PhysRevB.71.224422" >Positive Spin Polarization in Co∕Al2O3∕Co Tunnel Junctions Driven by Oxygen Adsorption&nbsp;</a><br>
+      K. Belashchenko, E. Tsymbal, I. Oleynik, and M. van Schilfgaarde, Phys. Rev. B 71, 224422 (2005) </p>
+    
+
+      <p><a href="http://dx.doi.org/10.1016/S0079-6425(03)00024-0" >Interatomic Bond-Order Potentials and Structural Prediction&nbsp;</a><br>
+      D. G. Pettifor and I. I. Oleynik, Prog. Mater. Sci. 49, 285 (2004) </p>
+    
+
+      <p><a href="http://dx.doi.org/10.1023/B:INTS.0000012299.56792.ae" >Metal-Oxide Interfaces in Magnetic Tunnel Junctions&nbsp;</a><br>
+      I. I. Oleynik and E. Y. Tsymbal, Interface Sci. 12, 105 (2004) </p>
+    
+
+      <p><a href="http://dx.doi.org/10.1103/PhysRevB.69.174408" >Effect of Interface Bonding on Spin-Dependent Tunneling from the Oxidized Co Surface&nbsp;</a><br>
+      K. D. Belashchenko, E. Y. Tsymbal, M. van Schilfgaarde, D. A. Stewart, I. I. Oleynik, and S. S. Jaswal, Phys. Rev. B 69, 174408 (2004) </p>
+    
+
+      <p><a href="http://dx.doi.org/10.1016/j.jmmm.2003.12.499" >Spin-dependent Tunneling from Clean and Oxidized Co Surfaces&nbsp;</a><br>
+      K. D. Belashchenko, E. Y. Tsymbal, M. van Schilfgaarde, D. a. Stewart, I. I. Oleynik, and S. S. Jaswal, J. Magn. Magn. Mater. 272-276, 1954 (2004) </p>
+    
+
+      <p><a href="http://dx.doi.org/10.1557/PROC-800-AA7.7" >Nanoscale Modeling of Shock Deformation of Diamond&nbsp;</a><br>
+      S. V. Zybin, I. I. Oleynik, M. L. Elert, and C. T. White, MRS Proc. 800, 299 (2003) </p>
+    
+
+      <p><a href="http://dx.doi.org/10.1063/1.1558631" >Atomic, Electronic, and Magnetic Properties of Magnetic Tunnel Junctions&nbsp;</a><br>
+      I. I. Oleynik and E. Y. Tsymbal, J. Appl. Phys. 93, 6429 (2003)</p>
+    
+
+      <p><a href="http://dx.doi.org/10.1103/PhysRevB.65.172103" >Analytic Bond-Order Potential for Open and Close-Packed Phases&nbsp;</a><br>
+      D. G. Pettifor and I. I. Oleinik, Phys. Rev. B 65, 172103 (2002) </p>
+    
+
+      <p><a href="http://dx.doi.org/10.1103/PhysRevB.66.073201" >Spin Injection into Amorphous Semiconductors&nbsp;</a><br>
+      E. Tsymbal, V. Burlakov, and I. Oleinik, Phys. Rev. B 66, 073201 (2002) </p>
+    
+
+      <p><a href="http://dx.doi.org/10.1016/S0927-0256(01)00204-X" >Bond-Order Potentials: Bridging the Electronic to Atomistic Modelling Hierarchies&nbsp;</a><br>
+      D. G. Pettifor, I. I. Oleinik, D. Nguyen-Manh, and V. Vitek, Comput. Mater. Sci. 23, 33 (2002) </p>
+    
+
+      <p><a href="http://dx.doi.org/10.1103/PhysRevB.65.020401" >Atomic and Electronic Structure of Co/SrTiO3/Co Magnetic Tunnel Junctions&nbsp;</a><br>
+      I. I. Oleinik, E. Y. Tsymbal, and D. G. Pettifor, Phys. Rev. B 65, 020401 (2001) </p>
+    
+
+      <p><a href="http://dx.doi.org/10.1103/PhysRevB.62.3952" >Structural and Electronic Properties of Co/Al2O3/Co Magnetic Tunnel Junction from First Principles&nbsp;</a><br>
+      I. I. Oleinik, E. Y. Tsymbal, and D. G. Pettifor, Phys. Rev. B 62, 3952 (2000) </p>
+    
+ 
+      <p><a href="http://dx.doi.org/10.1016/S0925-9635(99)00312-X" >Theoretical Study of Chemical Reactions on CVD Diamond Surfaces&nbsp;</a><br>
+      I. I. Oleinik, D. G. Pettifor, A. P. Sutton, and J. E. Butler, Diam. Relat. Mater. 9, 241 (2000) </p>
+    
+
+      <p><a href="http://dx.doi.org/10.1103/PhysRevLett.84.4124" >Bounded Analytic Bond-Order Potentials for σ and π Bonds&nbsp;</a><br>
+      D. G. Pettifor and I. I. Oleinik, Phys. Rev. Lett. 84, 4124 (2000) </p>
+    
+
+      <p><a href="http://dx.doi.org/10.1103/PhysRevB.59.8487" >Analytic Bond-Order Potentials Beyond Tersoff-Brenner. I. Theory&nbsp;</a><br>
+      D. G. Pettifor and I. I. Oleinik, Phys. Rev. B 59, 8487 (1999) </p>
+    
+
+      <p><a href="#">Analytic Bond-Order Potentials: Bridging The Electronic-Atomistic Length-Scale Gap&nbsp;</a><br>
+      I. I. Oleinik, M. Aoki, J. E. Butler, A. P. Sutton, Oxford Univ. Press 1 (1999)</p>
+    
+
+      <p><a href="http://dx.doi.org/10.1103/PhysRevB.59.8500" >Analytic Bond-Order Potentials Beyond Tersoff-Brenner. II. Application to the Hydrocarbons&nbsp;</a><br>
+      I. I. Oleinik and D. G. Pettifor, Phys. Rev. B 59, 8500 (1999) </p>
+    
+ 
+      <p><a href="http://dx.doi.org/10.1063/1.479727" >Etching Effects During the Chemical Vapor Deposition of (100) Diamond&nbsp;</a><br>
+      C. C. Battaile, D. J. Srolovitz, I. I. Oleinik, D. G. Pettifor, A. P. Sutton, S. J. Harris, and J. E. Butler, J. Chem. Phys. 111, 4291 (1999) </p>
+    
+
+      <p><a href="http://dx.doi.org/10.1557/PROC-538-275" >Surface Chemistry of CVD Diamond: Linking the Nanoscale and Mesoscale Modelling Hierarchies&nbsp;</a><br>
+      I. I. Oleinik, D. G. Pettifor, A. P. Sutton, C. C. Battaile, D. J. Srolovitz, and J. E. Butler, MRS Proc. 538, 275 (1998) </p>
+    
+
+      <p><a href="http://dx.doi.org/10.1016/0039-6028(96)00162-8" >Tunneling Dynamics of Electrons and Effective Tunneling Potential&nbsp;</a><br>
+      G. K. Ivanov, M. A. Kozhushner, and I. I. Oleinik, Surf. Sci. 363, 360 (1996) </p>
+    
+ 
+    
+      <p><a href="http://dx.doi.org/10.1016/0039-6028(95)00145-X" >Direct and Inverse Problems in the Theory of Scanning Tunneling Microscopy &nbsp;</a><br>
+      G. K. Ivanov, M. A. A. Kozhushner, and I. I. Oleinik, Surf. Sci. 331-333, 1191 (1995) </p>
+    
+
+
+</div></div>
+ 
+
   
 
-
-<div itemscope itemtype="https://schema.org/Person" class="h-card">
-
-  
-
-  <div class="author__content">
-    <h3 class="author__name p-name" itemprop="name">
-      <a class="u-url" rel="me" href="http://0.0.0.0:4000/" itemprop="url"></a>
-    </h3>
-    
-  </div>
-
-  <div class="author__urls-wrapper">
-    <button class="btn btn--inverse">Follow</button>
-    <ul class="author__urls social-icons">
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      <!--
-  <li>
-    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
-      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
-    </a>
-  </li>
--->
-    </ul>
-  </div>
-</div>
-  
-  </div>
-
-
-
-  <div class="archive">
-    
-      <h1 id="page-title" class="page__title"></h1>
-    
-    <p><strong>Publications</strong></p>
-
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="https://pubs.acs.org/toc/jpccck/current" target="_blank"><u>Tin-Selenium Compounds at Ambient and High Pressures</u></a>
-      <span class="text-element pub_text">K. Nguyen-Cong, J. M. Gonzalez, B. A. Steele, and I. I. Oleynik, J. Phys. C 122, 18274-18281 (2018)</span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="https://doi.org/10.1063/1.5018434" target="_blank"><u>Novel phases and superconductivity of tin sulfide compounds</u></a>
-      <span class="text-element pub_text">J. M. Gonzalez, K. Nguyen-Cong, B. A. Steele, and I. I. Oleynik, J. Chem. Phys. 146, 194701 (2018)</span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1063/1.4971510" target="_blank"><u>Cesium Pentazolate: A New Nitrogen-rich Energetic Material</u></a>
-      <span class="text-element pub_text">B. A. Steele, E. Stavrous, V. B. Prakapenka, H. Radousky, J. Zaug, J. C. Crowhurst, and I. I. Oleynik, AIP Conf. Proc. 1793, 40016 (2017)</span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1063/1.4971499" target="_blank"><u>First-principles Investigation Of Iron Pentacarbonyl Molecular Solid Phases At High Pressure</u></a>
-      <span class="text-element pub_text">K. N. Cong, B. A. Steele, A. C. Landerville, and I. I. Oleynik, AIP Conf. Proc. 1793, 70018 (2017)</span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1063/1.4971606" target="_blank"><u>Experimental And Theoretical Investigation Of Pressure-dependent Raman Spectra Of Triaminotrinitrobenzene (TATB) At High Pressures</u></a>
-      <span class="text-element pub_text">A. C. Landerville, J. C. Crowhurst, C. D. Grant, J. M. Zaug, and I. Oleynik, AIP Conf. Proc. 1793, 40005 (2017)</span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href=" http://dx.doi.org/10.1103/PhysRevE.96.012906" target="_blank"><u>Force Distribution In A Granular Medium Under Dynamic Loading</u></a>
-      <span class="text-element pub_text">V. A. Danylenko, S. V. Mykulyak, V. O. Polyakovskyi, V. V. Kulich, and I. I. Oleynik, Phys. Rev. E 96, 12906 (2017)</span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1021/acs.chemmater.6b04538" target="_blank"><u>High-Pressure Synthesis Of A Pentazolate Salt</u></a>
-      <span class="text-element pub_text">B. A. Steele, E. Stavrou, J. C. Crowhurst, J. M. Zaug, V. B. Prakapenka, and I. I. Oleynik, Chem. Mater. 29, 735 (2017)</span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1063/1.4971719" target="_blank"><u>New Crystal Phase Of Ammonium Nitrate: First-principles Prediction And Characterization</u></a>
-      <span class="text-element pub_text">B. A. Steele, and I. I. Oleynik, AIP Conf. Proc. 1793, 130008 (2017) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1021/acs.jpca.7b08974" target="_blank"><u>Novel Potassium Polynitrides At High Pressures</u></a>
-      <span class="text-element pub_text">B. A. Steele, and I. I. Oleynik, J. Phys. Chem. A 121, 8955 (2017)</span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1063/1.5004416" target="_blank"><u>Novel Rubidium Poly-nitrogen Materials At High Pressure</u></a>
-      <span class="text-element pub_text">A. S. Williams, B. A. Steele, and I. I. Oleynik, J. Chem. Phys. 147, 234701 (2017)</span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1021/acs.jpca.6b12900" target="_blank"><u>Pentazole And Ammonium Pentazolate: Crystalline Hydro-Nitrogens At High Pressure</u></a>
-      <span class="text-element pub_text">B. A. Steele and I. I. Oleynik,  J. Phys. Chem. A 121, 1808 (2017)</span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1063/1.4971455" target="_blank"><u>Preface: 19th Biennial APS Conference On Shock Compression Of Condensed Matter</u></a>
-      <span class="text-element pub_text">R. Chau, T. Germann, I. Oleynik, S. Peiris, R. Ravelo, and T. Sewell, AIP Conf. Proc. 1793, 10001 (2017)</span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1021/acs.jpcc.6b10956" target="_blank"><u>Sensor Effect In Oxide Films With A Large Concentration Of Conduction Electrons</u></a>
-      <span class="text-element pub_text">M. A. Kozhushner, V. L. Bodneva, I. I. Oleynik, T. V. Belysheva, M. I. Ikim, and L. I. Trakhtenberg,  J. Phys. Chem. C 121, 6940 (2017)</span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1063/1.4983040" target="_blank"><u>Structural And Spectroscopic Studies Of Nitrogen-carbon Monoxide Mixtures: Photochemical Response And Observation Of A Novel Phase</u></a>
-      <span class="text-element pub_text">J. A. Ciezak-Jenkins, B. A. Steele, G. M. Borstad, and I. I. Oleynik,  J. Chem. Phys. 146, 184309 (2017)</span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1063/1.4971541" target="_blank"><u>Ternary Inorganic Compounds Containing Carbon, Nitrogen, And Oxygen At High Pressures</u></a>
-      <span class="text-element pub_text">B. A. Steele and I. I. Oleynik, Inorg. Chem. 56, 13321 (2017)</span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1021/acs.inorgchem.7b02102" target="_blank"><u>Vibrational And Thermal Properties Of Β-HMX And TATB From Dispersion Corrected Density Functional Theory</u></a>
-      <span class="text-element pub_text">A. C. Landerville and I. I. Oleynik, AIP Conf. Proc. (2017), p. 50007</span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1063/1.4971597" target="_blank"><u>Vibrational And Thermophysical Properties Of PETN From First Principles</u></a>
-      <span class="text-element pub_text"> J. M. Gonzalez, A. C. Landerville, and I. I. Oleynik, AIP Conf. Proc. 1793, 70009 (2017)</span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1103/PhysRevB.94.125443" target="_blank"><u>Layer-dependent properties of SnS<sub>2</sub> and SnSe<sub>2</sub> two-dimensional materials</u></a>
-      <span class="text-element pub_text">J. M. Gonzalez and I. I. Oleynik, Phys. Rev. B 94, 125443 (2016)</span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1016/j.cplett.2015.11.008" target="_blank"><u>Sodium Pentazolate: A Nitrogen Rich High Energy Density Material</u></a>
-      <span class="text-element pub_text">B. A. Steele and I. I. Oleynik, Chem. Phys. Lett. 643, 21 (2016)</span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="" target="_blank"><u>Cesium Pentazolate: A New Nitrogen-rich Energetic Material</u></a>
-      <span class="text-element pub_text">B. A. Steele, E. Stavrou, V. B. Prakapenka, H. B. Radousky, J. M. Zaug, J. C. Crowhurst, and I. I. Oleynik, Lawrence Livermore Natl. Lab. Rep. LLNL-PROC-677378 (2015)</span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1021/acs.jpcc.5b01410" target="_blank"><u>Inhomogeneous Charge Distribution In Semiconductor Nanoparticles</u></a>
-      <span class="text-element pub_text">M. A. Kozhushner, B. V. Lidskii, I. I. Oleynik, V. S. Posvyanskii, and L. I. Trakhtenberg, J. Phys. Chem. C 119, 16286 (2015)</span>
-    </div>
-  </div>
-
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1016/j.cplett.2015.11.008" target="_blank"><u>Sodium pentazolate: A nitrogen rich high energy density material</u></a>
-      <span class="text-element pub_text">B. A. Steele and I. I. Oleynik, Chem. Phys. Lett. 643, 21 (2016)</span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1063/1.4937420" target="_blank"><u>New phase of ammonium nitrate: A monoclinic distortion of AN-IV</u></a>
-      <span class="text-element pub_text">B. A. Steele and I. I. Oleynik, J. Chem. Phys. 143, 234705 (2015)</span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1103/PhysRevE.90.033312" target="_blank"><u>Laminar, cellular, transverse, and multiheaded pulsating detonations in condensed phase energetic materials from molecular dynamics simulations</u></a>
-      <span class="text-element pub_text">V. V. Zhakhovsky, M. M. Budzevich, A. C. Landerville, I. I. Oleynik, and C. T. White, Phys. Rev. E 90, 033312 (2014)</span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1021/jp502619n" target="_blank"><u>Ammonium Azide under High Pressure: A Combined Theoretical and Experimental Study</u></a>
-      <span class="text-element pub_text">J. C. Crowhurst, J. M. Zaug, H. B. Radousky, B. A. Steele, A. C. Landerville, and I. I. Oleynik, J. Phys. Chem. A 118, 8695 (2014)</span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1021/jp501989k" target="_blank"><u>Effect of Temperature and Nanoparticle Size on Sensor Properties of Nanostructured Tin Dioxide Films</u></a>
-      <span class="text-element pub_text">M. A. Kozhushner, L. I. Trakhtenberg, V. L. Bodneva, T. V. Belisheva, A. C. Landerville, and I. I. Oleynik, J. Phys. Chem. C 118, 11440 (2014)</span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1088/1742-6596/500/16/162005" target="_blank"><u>Density Functional Theory Investigation of Sodium Azide at High Pressure</u></a>
-      <span class="text-element pub_text">B. A. Steele, A. C. Landerville, and I. I. Oleynik, J. Phys. Conf. Ser. 500, 162005 (2014)</span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1088/1742-6596/500/16/162006" target="_blank"><u>Ammonium Azide under Hydrostatic Compression</u></a>
-      <span class="text-element pub_text">A. C. Landerville, B. C. Steele, and I. I. Oleynik, J. Phys. Conf. Ser. 500, 162006 (2014) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1088/1742-6596/500/17/172008" target="_blank"><u>Evolution of Elastic Precursor and Plastic Shock Wave in Copper via Molecular Dynamics Simulations</u></a>
-      <span class="text-element pub_text">R. Perriot, V. V. Zhakhovsky, N. A. Inogamov, and I. I. Oleynik, J. Phys. Conf. Ser. 500, 172008 (2014) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1088/1742-6596/500/17/172007" target="_blank"><u>Elastic-Plastic Collapse of Super-Elastic Shock Waves in Face-Centered-Cubic Solids</u></a>
-      <span class="text-element pub_text">V. V. Zhakhovsky, N. A. Inogamov, B. J. Demaske, I. I. Oleynik, and C. T. White, J. Phys. Conf. Ser. 500, 172007 (2014) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1088/1742-6596/500/17/172006" target="_blank"><u>Nano-Scale Spinning Detonation in a Condensed Phase Energetic Material</u></a>
-      <span class="text-element pub_text">V. V. Zhakhovsky, M. M. Budzevich, A. C. Landerville, I. I. Oleynik, and C. T. White, J. Phys. Conf. Ser. 500, 172006 (2014)</span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1088/1742-6596/500/17/172005" target="_blank"><u>From Laminar to Turbulent Detonations in Energetic Materials from Molecular Dynamics Simulations</u></a>
-      <span class="text-element pub_text">V. V. Zhakhovsky, M. M. Budzevich, A. C. Landerville, I. I. Oleynik, and C. T. White, J. Phys. Conf. Ser. 500, 172005 (2014)</span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1088/1742-6596/500/19/192023" target="_blank"><u>Two-Temperature Hydrodynamic Expansion and Coupling of Strong Elastic Shock with Supersonic Melting Front Produced by Ultrashort Laser Pulse</u></a>
-      <span class="text-element pub_text">N. A. Inogamov, V. V. Zhakhovsky, V. A. Khokhlov, B. J. Demaske, K. V Khishchenko, and I. I. Oleynik, J. Phys. Conf. Ser. 500, 192023 (2014)</span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1088/1742-6596/500/11/112070" target="_blank"><u>Surface Nano-Structuring Produced by Spallation of Metal Irradiated by an Ultrashort Laser Pulse</u></a>
-      <span class="text-element pub_text">N. A. Inogamov, V. V. Zhakhovsky, S. I. Ashitkov, Y. N. Emirov, A. Y. Faenov, T. A. Pikuz, M. Ishino, M. Kando, N. Hasegawa, M. Nishikino, T. Kawachi, M. B. Agranat, A. V Andriash, S. E. Kuratov, and I. I. Oleynik, J. Phys. Conf. Ser. 500, 112070 (2014) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1088/1742-6596/510/1/012041" target="_blank"><u>Ultrafast Lasers and Solids in Highly Excited States: Results of Hydrodynamics and Molecular Dynamics Simulations&nbsp;</u></a>
-      <span class="text-element pub_text">N. A. Inogamov, V. V. Zhakhovsky, V. A. Khokhlov, S. I. Ashitkov, Y. N. Emirov, K. V Khichshenko, A. Y. Faenov, T. A. Pikuz, M. Ishino, M. Kando, N. Hasegawa, M. Nishikino, P. S. Komarov, B. J. Demaske, M. B. Agranat, S. I. Anisimov, T. Kawachi, and I. I. Oleynik, J. Phys. Conf. Ser. 510, 012041 (2014) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1016/j.engfailanal.2013.12.009" target="_blank"><u>Surface Nanodeformations Caused by Ultrashort Laser Pulse&nbsp;</u></a>
-      <span class="text-element pub_text">N. A. Inogamov, V. V. Zhakhovsky, S. I. Ashitkov, Y. N. Emirov, A. Y. Faenov, Y. V. Petrov, V. A. Khokhlov, M. Ishino, B. J. Demaske, M. Tanaka, N. Hasegawa, M. Nishikino, S. Tamotsu, T. A. Pikuz, I. Y. Skobelev, T. Ohba, T. Kaihori, Y. Ochi, T. Imazono, Y. Fukuda, M. Kando, Y. Kato, T. Kawachi, S. I. Anisimov, M. B. Agranat, I. I. Oleynik, and V. E. Fortov, Eng. Fail. Anal. (2014)</span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1002/ctpp.201310049" target="_blank"><u>Electron-Ion Relaxation, Phase Transitions, and Surface Nano-Structuring Produced by Ultrashort Laser Pulses in Metals&nbsp;</u></a>
-      <span class="text-element pub_text">N. A. Inogamov, V. V. Zhakhovsky, Y. V. Petrov, V. A. Khokhlov, S. I. Ashitkov, K. V. Khishchenko, K. P. Migdal, D. K. Ilnitsky, Y. N. Emirov, P. S. Komarov, V. V. Shepelev, C. W. Miller, I. I. Oleynik, M. B. Agranat, A. V. Andriyash, S. I. Anisimov, and V. E. Fortov, Contrib. to Plasma Phys. 53, 796 (2013) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1103/PhysRevB.87.054109" target="_blank"><u>Ultrashort Shock Waves in Nickel Induced by Femtosecond Laser Pulses&nbsp;</u></a>
-      <span class="text-element pub_text">B. J. Demaske, V. V. Zhakhovsky, N. A. Inogamov, and I. I. Oleynik, Phys. Rev. B 87, 054109 (2013)</span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1021/jp311847j" target="_blank"><u>Theory of Sensing Response of Nanostructured Tin-Dioxide Thin Films to Reducing Hydrogen Gas&nbsp;</u></a>
-      <span class="text-element pub_text">M. A. Kozhushner, L. I. Trakhtenberg, A. C. Landerville, and I. I. Oleynik, J. Phys. Chem. C 117, 11562 (2013)</span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1103/PhysRevB.88.064101" target="_blank"><u>Screened Environment-Dependent Reactive Empirical Bond-Order Potential for Atomistic Simulations of Carbon Materials</u></a>
-      <span class="text-element pub_text">R. Perriot, X. Gu, Y. Lin, V. V. Zhakhovsky, and I. I. Oleynik, Phys. Rev. B 88, 64101 (2013) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1063/1.4739864" target="_blank"><u>Super-Elastic Response of Metals to Laser-Induced Shock Waves&nbsp;</u></a>
-      <span class="text-element pub_text">V. V. Zhakhovsky, B. J. Demaske, N. A. Inogamov, V. A. Khokhlov, S. I. Ashitkov, M. B. Agranat, and I. I. Oleynik, AIP Conf. Proc. 102, 102 (2012) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1063/1.3686502" target="_blank"><u>Single Two-Zone Elastic-Plastic Shock Waves in Solids&nbsp;</u></a>
-      <span class="text-element pub_text">V. V. Zhakhovsky, M. M. Budzevich, N. Inogamov, C. T. White, and I. I. Oleynik, AIP Conf. Proc. 1232, 1227 (2012)</span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1063/1.3686489" target="_blank"><u>Shock Compression of Diamond: Molecular Dynamics Simulations Using Different Interatomic Potentials&nbsp;</u></a>
-      <span class="text-element pub_text">R. Perriot, Y. Lin, V. V. Zhakhovsky, N. Pineau, J. H. Los, J.-B. Maillet, L. Soulard, C. T. White, and I. I. Oleynik, AIP Conf. Proc. 1175, 1175 (2012) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1063/1.3686495" target="_blank"><u>First-Principles Thermodynamics of Energetic Materials&nbsp;</u></a>
-      <span class="text-element pub_text">A. C. Landerville, M. W. Conroy, Y. Lin, M. M. Budzevich, C. T. White, and I. I. Oleynik, AIP Conf. Proc. 1202, 1199 (2012)</span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1134/S1063776112100056" target="_blank"><u>Vibrational Excitation of a Molecule by a Resonance Current&nbsp;</u></a>
-      <span class="text-element pub_text">M. A. Kozhushner and I. I. Oleinik, J. Exp. Theor. Phys. 115, 759 (2012) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1063/1.4739912" target="_blank"><u>Two-Temperature Thermodynamic and Kinetic Properties of Transition Metals Irradiated by Femtosecond Lasers&nbsp;</u></a>
-      <span class="text-element pub_text">N. A. Inogamov, Y. V. Petrov, V. V. Zhakhovsky, V. a. Khokhlov, B. J. Demaske, S. I. Ashitkov, K. V. Khishchenko, K. P. Migdal, M. B. Agranat, S. I. Anisimov, V. E. Fortov, and I. I. Oleynik, AIP Conf. Proc. 608, 593 (2012) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1063/1.3686425" target="_blank"><u>Ultrashort Elastic and Plastic Shockwaves in Aluminum&nbsp;</u></a>
-      <span class="text-element pub_text">N. Inogamov, V. Khokhlov, Y. Petrov, S. Anisimov, V. V. Zhakhovsky, B. J. Demaske, I. I. Oleynik, S. I. Ashitkov, K. V. Khishchenko, M. Agranat, V. Fortov, and C. T. White, AIP Conf. Proc. 912, 909 (2012) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1063/1.3686486" target="_blank"><u>MD Simulations of Laser-Induced Ultrashort Shock Waves in Nickel&nbsp;</u></a>
-      <span class="text-element pub_text">B. J. Demaske, V. V. Zhakhovsky, N. Inogamov, C. T. White, and I. I. Oleynik, AIP Conf. Proc. 1166, 1163 (2012)</span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1063/1.3686520" target="_blank"><u>Evolution of Metastable Elastic Shock Waves in Nickel&nbsp;</u></a>
-      <span class="text-element pub_text">B. J. Demaske, V. V. Zhakhovsky, C. T. White, and I. I. Oleynik, AIP Conf. Proc. 1306, 1303 (2012)</span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1063/1.3686498" target="_blank"><u>A New Nickel EAM Potential for Atomistic Simulations of Ablation, Spallation, and Shock-Wave Phenomena&nbsp;</u></a>
-      <span class="text-element pub_text">B. J. Demaske, V. V. Zhakhovsky, C. T. White, and I. I. Oleynik, AIP Conf. Proc. 1214, 1211 (2012) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1063/1.3686514" target="_blank"><u>Effect of Reactive Chemistry on Mechanisms of Condensed Phase Detonation&nbsp;</u></a>
-      <span class="text-element pub_text">M. M. Budzevich, V. V. Zhakhovsky, C. T. White, and I. I. Oleynik, AIP Conf. Proc. 1282, 1279 (2012) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1063/1.4739866" target="_blank"><u>Strength of Metals in Liquid and Solid States at Extremely High Tension Produced by Femtosecond Laser Heating&nbsp;</u></a>
-      <span class="text-element pub_text">S. I. Ashitkov, N. A. Inogamov, P. S. Komarov, V. V. Zhakhovsky, I. I. Oleynik, M. B. Agranat, G. I. Kanel, and V. E. Fortov, AIP Conf. Proc. 120, 120 (2012) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1063/1.3686511" target="_blank"><u>Shock-Induced Phase Transitions in Metals: Recrystallization of Supercooled Melt and Melting of Overheated Solids&nbsp;</u></a>
-      <span class="text-element pub_text">M. M. Budzevich, V. V. Zhakhovsky, C. T. White, and I. I. Oleynik, AIP Conf. Proc. 1270, 1267 (2012) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1063/1.4739475" target="_blank"><u>Atomic and Electronic Structure of Graphene/Sn-Ni(111) and Graphene/Sn-Cu(111) Surface Alloy Interfaces&nbsp;</u></a>
-      <span class="text-element pub_text">L. Adamska, R. Addou, M. Batzill, and I. I. Oleynik, Appl. Phys. Lett. 101, 051602 (2012) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1134/S0021364012040042" target="_blank"><u>Formation of Nanocavities in the Surface Layer of an Aluminum Target Irradiated by a Femtosecond Laser Pulse&nbsp;</u></a>
-      <span class="text-element pub_text">S. I. Ashitkov, N. A. Inogamov, V. V. Zhakhovskii, Y. N. Emirov, M. B. Agranat, I. I. Oleinik, S. I. Anisimov, and V. E. Fortov, JETP Lett. 95, 176 (2012) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1103/PhysRevB.85.195443" target="_blank"><u>Atomic and Electronic Structure of Simple Metal/Graphene and Complex Metal/Graphene/Metal Interfaces&nbsp;</u></a>
-      <span class="text-element pub_text">L. Adamska, Y. Lin, A. J. Ross, M. Batzill, and I. I. Oleynik, Phys. Rev. B 85, 195443 (2012) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1103/PhysRevLett.109.125505" target="_blank"><u>Evolution of Shock-Induced Orientation-Dependent Metastable States in Crystalline Aluminum&nbsp;</u></a>
-      <span class="text-element pub_text">M. M. Budzevich, V. V. Zhakhovsky, C. T. White, and I. I. Oleynik, Phys. Rev. Lett. 109, 125505 (2012) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1063/1.3686488" target="_blank"><u>Shock-Induced Phase Transition in Diamond&nbsp;</u></a>
-      <span class="text-element pub_text">Y. Lin, R. Perriot, V. V. Zhakhovsky, X. Gu, C. T. White, I. I. Oleynik, and V. V. Zhakovsky, AIP Conf. Proc. 1426, 1171 (2011) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1103/PhysRevLett.107.135502" target="_blank"><u>Two-Zone Elastic-Plastic Single Shock Waves in Solids&nbsp;</u></a>
-      <span class="text-element pub_text">V. V. Zhakhovsky, M. M. Budzevich, N. A. Inogamov, I. I. Oleynik, and C. T. White, Phys. Rev. Lett. 107, 135502 (2011) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1021/nl103383b" target="_blank"><u>Graphene Growth on Ni(111) by Transformation of a Surface Carbide.&nbsp;</u></a>
-      <span class="text-element pub_text">J. Lahiri, T. Miller, L. Adamska, I. I. Oleynik, and M. Batzill, Nano Lett. 11, 518 (2011) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1088/1367-2630/13/2/025001" target="_blank"><u>Graphene Growth and Stability at Nickel Surfaces&nbsp;</u></a>
-      <span class="text-element pub_text">J. Lahiri, T. S Miller, A. J Ross, L. Adamska, I. I. Oleynik, and M. Batzill, New J. Phys. 13, 025001 (2011) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1063/1.3361407" target="_blank"><u>Hydrostatic and Uniaxial Compression Studies of 1,3,5-Triamino- 2,4,6-Trinitrobenzene Using Density Functional Theory with van der Waals Correction&nbsp;</u></a>
-      <span class="text-element pub_text">M. M. Budzevich, A. C. Landerville, M. W. Conroy, Y. Lin, I. I. Oleynik, and C. T. White, J. Appl. Phys. 107, 113524 (2010) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1038/nnano.2010.53" target="_blank"><u>An Extended Defect in Graphene as a Metallic Wire&nbsp;</u></a>
-      <span class="text-element pub_text">J. Lahiri, Y. Lin, P. Bozkurt, I. I. Oleynik, and M. Batzill, Nat. Nanotechnol. 5, 326 (2010) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1063/1.3526754" target="_blank"><u>Equations of State for Energetic Materials from Density Functional Theory with van der Waals, Thermal, and Zero-point Energy Corrections&nbsp;</u></a>
-      <span class="text-element pub_text">A. C. Landerville, M. W. Conroy, M. M. Budzevich, Y. Lin, C. T. White, and I. I. Oleynik, Appl. Phys. Lett. 97, 251908 (2010) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1103/PhysRevB.81.035404" target="_blank"><u>Electron-Plasmon Interactions in Resonant Molecular Tunnel Junctions&nbsp;</u></a>
-      <span class="text-element pub_text">L. Adamska, M. A. Kozhushner, and I. I. Oleynik, Phys. Rev. B 81, 035404 (2010) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1063/1.3507095" target="_blank"><u>Molecular Dynamics Simulations of Femtosecond Laser Ablation and Spallation of Gold&nbsp;</u></a>
-      <span class="text-element pub_text">B. J. Demaske, V. V. Zhakhovsky, N. A. Inogamov, I. I. Oleynik, and C. Phipps, AIP Conf. Proc. 1278, 121 (2010) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1103/PhysRevB.82.064113" target="_blank"><u>Ablation and Spallation of Gold Films Irradiated by Ultrashort Laser Pulse&nbsp;</u></a>
-      <span class="text-element pub_text">B. J. Demaske, V. V. Zhakhovsky, N. A. Inogamov, and I. I. Oleynik, Phys. Rev. B 82, 64113 (2010) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1021/jz900026j" target="_blank"><u>Prediction of Isothermal Equation of State of an Explosive Nitrate Ester by van der Waals Density Functional Theory&nbsp;</u></a>
-      <span class="text-element pub_text">A. C. Landerville, M. W. Conroy, I. I. Oleynik, and C. T. White, J. Phys. Chem. Lett. 1, 346 (2010) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1038/nchem.392" target="_blank"><u>Rectification and Stability of a Single Molecular Diode with Controlled Orientation&nbsp;</u></a>
-      <span class="text-element pub_text">J. Hihath, Y. Lee, L. Yu, L. Adamska, M. A. Kozhushner, I. I. Oleynik, and N. Tao, Nat. Chem. 1, 635 (2009) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1557/PROC-1185-II05-04" target="_blank"><u>Computational Nanomechanics of Graphene Membranes&nbsp;</u></a>
-      <span class="text-element pub_text">R. Perriot, X. Gu, and I. I. Oleynik, MRS Proc. 1185 (2009) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1021/jp809843k" target="_blank"><u>Density Functional Theory Calculations of Solid Nitromethane under Hydrostatic and Uniaxial Compressions with Empirical van der Waals Correction&nbsp;</u></a>
-      <span class="text-element pub_text">M. W. Conroy, I. I. Oleynik, S. V Zybin, and C. T. White, J. Phys. Chem. A 113, 3610 (2009) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1063/1.3295177" target="_blank"><u>Physical and Chemical Properties of a New Energetic Material Si-PETN&nbsp;</u></a>
-      <span class="text-element pub_text">Y. Lin, M. M. Budzevich, A. C. Landerville, I. I. Oleynik, and C. T. White, AIP Conf. Proc. 1195, 474 (2009) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1063/1.3295266" target="_blank"><u>Reactive Molecular Dynamics of Detonating PETN&nbsp;</u></a>
-      <span class="text-element pub_text">A. C. Landerville, C. T. White, and I. I. Oleynik, AIP Conf. Proc. 1195, 813 (2009) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1063/1.3295260" target="_blank"><u>Molecular Dynamics Simulations of Shock-Induced Defect Healing in Silicon&nbsp;</u></a>
-      <span class="text-element pub_text">X. Gu, Y. Lin, I. I. Oleynik, and C. T. White, AIP Conf. Proc. 1195, 793 (2009) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1063/1.3295196" target="_blank"><u>Hydrostatic Equation of State and Anisotropic Constitutive Relationships in 1,3,5-Triamino-2,4,6-Trinitrobenzene (TATB)&nbsp;</u></a>
-      <span class="text-element pub_text">M. Budzevich, M. Conroy, A. Landerville, Y. Lin, I. Oleynik, and C. T. White, AIP Conf. Proc. 1195, 545 (2009) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1063/1.3295267" target="_blank"><u>First-Principles Investigation of Reactive Molecular Dynamics in Detonating RDX and TATB&nbsp;</u></a>
-      <span class="text-element pub_text">I. I. Oleynik, A. C. Landerville, and C. T. White, AIP Conf. Proc. 817, 817 (2009) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1021/jp905969y" target="_blank"><u>Reactive Molecular Dynamics of Hypervelocity Collisions of PETN Molecules&nbsp;</u></a>
-      <span class="text-element pub_text">A. C. Landerville, I. I. Oleynik, and C. T. White, J. Phys. Chem. A 113, 12094 (2009) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1063/1.3295179" target="_blank"><u>First-Principles Studies of Hydrostatic and Uniaxial Compression of a New Energetic Material -an Energetic Nitrate Ester&nbsp;</u></a>
-      <span class="text-element pub_text">M. W. Conroy, a. C. Landerville, I. I. Oleynik, and C. T. White, AIP Conf. Proc. 1195, 482 (2009) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1103/PhysRevB.78.180101" target="_blank"><u>Shear Stresses in Shock-Compressed Diamond from Density Functional Theory&nbsp;</u></a>
-      <span class="text-element pub_text">I. I. Oleynik, A. Landerville, S. V Zybin, M. L. Elert, and C. T. White, Phys. Rev. B 78, (2008) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1103/PhysRevB.77.094107" target="_blank"><u>First-Principles Investigation of Anisotropic Constitutive Relationships in Pentaerythritol Tetranitrate&nbsp;</u></a>
-      <span class="text-element pub_text">M. Conroy, I. Oleynik, S. Zybin, and C. White, Phys. Rev. B 77, 094107 (2008) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1063/1.2973689" target="_blank"><u>Density Functional Theory Calculations of Anisotropic Constitutive Relationships in Alpha-Cyclotrimethylenetrinitramine&nbsp;</u></a>
-      <span class="text-element pub_text">M. W. Conroy, I. I. Oleynik, S. V. Zybin, and C. T. White, J. Appl. Phys. 104, 113501 (2008) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1098/rsta.2007.2152" target="_blank"><u>A Mechanism for Crystal Twinning in the Growth of Diamond by Chemical Vapour Deposition&nbsp;</u></a>
-      <span class="text-element pub_text">J. E. Butler and I. I. Oleynik, Philos. Trans. A. Math. Phys. Eng. Sci. 366, 295 (2008) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1103/PhysRevB.78.180101" target="_blank"><u>Shear Stresses in Shock-Compressed Diamond from Density Functional Theory&nbsp;</u></a>
-      <span class="text-element pub_text">I. I. Oleynik, A. C. Landerville, S. V Zybin, M. L. Elert, and C. T. White, Phys. Rev. B 78, 180101 (2008) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1063/1.2833044" target="_blank"><u>Molecular Dynamics Simulations of an Anomalous Response of Diamond to Shock Compression&nbsp;</u></a>
-      <span class="text-element pub_text">K. McLaughlin, I. I. Oleynik, S. V. Zybin, M. L. Elert, and C. T. White, AIP Conf. Proc. 955, 321 (2007) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1063/1.2833092" target="_blank"><u>First-Principles Reactive Molecular Dynamics of Chemistry in Detonating Energetic Materials&nbsp;</u></a>
-      <span class="text-element pub_text">A. Landerville, I. I. Oleynik, M. A. Kozhushner, and C. T. White, AIP Conf. Proc. 955, 447 (2007) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1063/1.2833057" target="_blank"><u>Anisotropic Constitutive Relationships in Energetic Materials: PETN and HMX&nbsp;</u></a>
-      <span class="text-element pub_text">M. Conroy, I. I. Oleynik, S. V. Zybin, and C. T. White, AIP Conf. Proc. 955, 361 (2007) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1063/1.2833073" target="_blank"><u>Anisotropic Constitutive Relationships in Energetic Materials: Nitromethane and RDX&nbsp;</u></a>
-      <span class="text-element pub_text">I. I. Oleynik, M. Conroy, and C. T. White, AIP Conf. Proc. 955, 401 (2007) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1016/j.pmatsci.2006.10.009" target="_blank"><u>Interface Effects in Spin-Dependent Tunneling&nbsp;</u></a>
-      <span class="text-element pub_text">E. Y. Tsymbal, K. D. Belashchenko, J. Velev, S. S. Jaswal, M. Vanschilfgaarde, I. I. Oleynik, and D. A. Stewart, Prog. Mater. Sci. 52, 401 (2007) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1063/1.2263350" target="_blank"><u>Shear Stresses in Shock-Compressed Covalent Solids&nbsp;</u></a>
-      <span class="text-element pub_text">I. I. Oleynik, S. V. Zybin, M. L. Elert, and C. T. White, AIP Conf. Proc. 845, 417 (2006) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1063/1.2263349" target="_blank"><u>Nanoscale Molecular Dynamics Simulaton of Shock Compression of Silicon&nbsp;</u></a>
-      <span class="text-element pub_text">I. I. Oleynik, S. V Zybin, M. L. Elert, and C. T. White, AIP Conf. Proc. 845, 413 (2006) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1103/PhysRevLett.96.096803" target="_blank"><u>Rectification Mechanism in Diblock Oligomer Molecular Diodes&nbsp;</u></a>
-      <span class="text-element pub_text">I. I. Oleynik, M. A. Kozhushner, V. S. Posvyanskii, and L. Yu, Phys. Rev. Lett. 96, 096803 (2006) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1063/1.2263387" target="_blank"><u>Energetic Materials at High Compression: First-Principles Density Functional Theory and Reactive Force Field Studies&nbsp;</u></a>
-      <span class="text-element pub_text">I. I. Oleynik, M. Conroy, S. V Zybin, L. Zhang, A. C. Van Duin, W. A. Goddard, and C. T. White, AIP Conf. Proc. 845, 573 (2006) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1103/PhysRevB.74.165103" target="_blank"><u>Bound States of Tunneling Electrons in Molecular Chains&nbsp;</u></a>
-      <span class="text-element pub_text">M. A. Kozhushner, V. S. Posvyanskii, and I. I. Oleynik, Phys. Rev. B 74, 165103 (2006) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1016/j.chemphys.2005.06.023" target="_blank"><u>Tunneling and Resonant Conductance in One-Dimensional Molecular Structures&nbsp;</u></a>
-      <span class="text-element pub_text">M. A. Kozhushner, V. S. Posvyanskii, and I. I. Oleynik, Chem. Phys. 319, 368 (2005) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1103/PhysRevB.71.224422" target="_blank"><u>Positive Spin Polarization in Co∕Al2O3∕Co Tunnel Junctions Driven by Oxygen Adsorption&nbsp;</u></a>
-      <span class="text-element pub_text">K. Belashchenko, E. Tsymbal, I. Oleynik, and M. van Schilfgaarde, Phys. Rev. B 71, 224422 (2005) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1016/S0079-6425(03)00024-0" target="_blank"><u>Interatomic Bond-Order Potentials and Structural Prediction&nbsp;</u></a>
-      <span class="text-element pub_text">D. G. Pettifor and I. I. Oleynik, Prog. Mater. Sci. 49, 285 (2004) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1023/B:INTS.0000012299.56792.ae" target="_blank"><u>Metal-Oxide Interfaces in Magnetic Tunnel Junctions&nbsp;</u></a>
-      <span class="text-element pub_text">I. I. Oleynik and E. Y. Tsymbal, Interface Sci. 12, 105 (2004) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1103/PhysRevB.69.174408" target="_blank"><u>Effect of Interface Bonding on Spin-Dependent Tunneling from the Oxidized Co Surface&nbsp;</u></a>
-      <span class="text-element pub_text">K. D. Belashchenko, E. Y. Tsymbal, M. van Schilfgaarde, D. A. Stewart, I. I. Oleynik, and S. S. Jaswal, Phys. Rev. B 69, 174408 (2004) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1016/j.jmmm.2003.12.499" target="_blank"><u>Spin-dependent Tunneling from Clean and Oxidized Co Surfaces&nbsp;</u></a>
-      <span class="text-element pub_text">K. D. Belashchenko, E. Y. Tsymbal, M. van Schilfgaarde, D. a. Stewart, I. I. Oleynik, and S. S. Jaswal, J. Magn. Magn. Mater. 272-276, 1954 (2004) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1557/PROC-800-AA7.7" target="_blank"><u>Nanoscale Modeling of Shock Deformation of Diamond&nbsp;</u></a>
-      <span class="text-element pub_text">S. V. Zybin, I. I. Oleynik, M. L. Elert, and C. T. White, MRS Proc. 800, 299 (2003) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1063/1.1558631" target="_blank"><u>Atomic, Electronic, and Magnetic Properties of Magnetic Tunnel Junctions&nbsp;</u></a>
-      <span class="text-element pub_text">I. I. Oleynik and E. Y. Tsymbal, J. Appl. Phys. 93, 6429 (2003)</span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1103/PhysRevB.65.172103" target="_blank"><u>Analytic Bond-Order Potential for Open and Close-Packed Phases&nbsp;</u></a>
-      <span class="text-element pub_text">D. G. Pettifor and I. I. Oleinik, Phys. Rev. B 65, 172103 (2002) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1103/PhysRevB.66.073201" target="_blank"><u>Spin Injection into Amorphous Semiconductors&nbsp;</u></a>
-      <span class="text-element pub_text">E. Tsymbal, V. Burlakov, and I. Oleinik, Phys. Rev. B 66, 073201 (2002) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1016/S0927-0256(01)00204-X" target="_blank"><u>Bond-Order Potentials: Bridging the Electronic to Atomistic Modelling Hierarchies&nbsp;</u></a>
-      <span class="text-element pub_text">D. G. Pettifor, I. I. Oleinik, D. Nguyen-Manh, and V. Vitek, Comput. Mater. Sci. 23, 33 (2002) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1103/PhysRevB.65.020401" target="_blank"><u>Atomic and Electronic Structure of Co/SrTiO3/Co Magnetic Tunnel Junctions&nbsp;</u></a>
-      <span class="text-element pub_text">I. I. Oleinik, E. Y. Tsymbal, and D. G. Pettifor, Phys. Rev. B 65, 020401 (2001) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1103/PhysRevB.62.3952" target="_blank"><u>Structural and Electronic Properties of Co/Al2O3/Co Magnetic Tunnel Junction from First Principles&nbsp;</u></a>
-      <span class="text-element pub_text">I. I. Oleinik, E. Y. Tsymbal, and D. G. Pettifor, Phys. Rev. B 62, 3952 (2000) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1016/S0925-9635(99)00312-X" target="_blank"><u>Theoretical Study of Chemical Reactions on CVD Diamond Surfaces&nbsp;</u></a>
-      <span class="text-element pub_text">I. I. Oleinik, D. G. Pettifor, A. P. Sutton, and J. E. Butler, Diam. Relat. Mater. 9, 241 (2000) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1103/PhysRevLett.84.4124" target="_blank"><u>Bounded Analytic Bond-Order Potentials for σ and π Bonds&nbsp;</u></a>
-      <span class="text-element pub_text">D. G. Pettifor and I. I. Oleinik, Phys. Rev. Lett. 84, 4124 (2000) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1103/PhysRevB.59.8487" target="_blank"><u>Analytic Bond-Order Potentials Beyond Tersoff-Brenner. I. Theory&nbsp;</u></a>
-      <span class="text-element pub_text">D. G. Pettifor and I. I. Oleinik, Phys. Rev. B 59, 8487 (1999) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="#">Analytic Bond-Order Potentials: Bridging The Electronic-Atomistic Length-Scale Gap&nbsp;&lt;/u&gt;</a>
-      <span class="text-element pub_text">I. I. Oleinik, M. Aoki, J. E. Butler, A. P. Sutton, Oxford Univ. Press 1 (1999)</span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1103/PhysRevB.59.8500" target="_blank"><u>Analytic Bond-Order Potentials Beyond Tersoff-Brenner. II. Application to the Hydrocarbons&nbsp;</u></a>
-      <span class="text-element pub_text">I. I. Oleinik and D. G. Pettifor, Phys. Rev. B 59, 8500 (1999) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1063/1.479727" target="_blank"><u>Etching Effects During the Chemical Vapor Deposition of (100) Diamond&nbsp;</u></a>
-      <span class="text-element pub_text">C. C. Battaile, D. J. Srolovitz, I. I. Oleinik, D. G. Pettifor, A. P. Sutton, S. J. Harris, and J. E. Butler, J. Chem. Phys. 111, 4291 (1999) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1557/PROC-538-275" target="_blank"><u>Surface Chemistry of CVD Diamond: Linking the Nanoscale and Mesoscale Modelling Hierarchies&nbsp;</u></a>
-      <span class="text-element pub_text">I. I. Oleinik, D. G. Pettifor, A. P. Sutton, C. C. Battaile, D. J. Srolovitz, and J. E. Butler, MRS Proc. 538, 275 (1998) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1016/0039-6028(96)00162-8" target="_blank"><u>Tunneling Dynamics of Electrons and Effective Tunneling Potential&nbsp;</u></a>
-      <span class="text-element pub_text">G. K. Ivanov, M. A. Kozhushner, and I. I. Oleinik, Surf. Sci. 363, 360 (1996) </span>
-    </div>
-  </div>
-<div class="row row-pub">
-    <div class="coffee-span-24 pub_listing">
-      <a class="link-text pub_title" href="http://dx.doi.org/10.1016/0039-6028(95)00145-X" target="_blank"><u>Direct and Inverse Problems in the Theory of Scanning Tunneling Microscopy &nbsp;</u></a>
-      <span class="text-element pub_text">G. K. Ivanov, M. A. A. Kozhushner, and I. I. Oleinik, Surf. Sci. 331-333, 1191 (1995) </span>
-    </div>
-  </div>
-<p>&lt;/body&gt;</p>
-
-<p>&lt;/html&gt;</p>
-
-
-  </div>
-</div>
-    </div>
-
-    
-
-    <div id="footer" class="page__footer">
-      <footer>
-        <!-- start custom footer snippets -->
-
-<!-- end custom footer snippets -->
-        <div class="page__footer-follow">
-  <ul class="social-icons">
-    
-      <li><strong>Follow:</strong></li>
-    
-
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-
-    
-      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
-    
-  </ul>
-</div>
-
-<div class="page__footer-copyright">&copy; 2022 Your Name. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
-
-      </footer>
-    </div>
-
-    
-  <script src="/assets/js/main.min.js"></script>
-
-
-
-
-
-
-
-
-
-
-  </body>
-</html>
