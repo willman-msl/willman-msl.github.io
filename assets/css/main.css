@@ -1236,7 +1236,7 @@ opacity:1
 {
 display:inline-block;
 margin-bottom:0.25em;
-padding:0.5em 1em;
+padding:0.25em 0.25em;
 font-family:-apple-system,BlinkMacSystemFont,"Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
 font-size:.75em;
 font-weight:bold;
@@ -1262,7 +1262,19 @@ background-color:#6f777d;
 color:black}
 .btn--primary:hover{
 background-color:#595f64;
+color:white}
+.btn--secondary{
+	text-align: left;
+font-size: 18px;
 color:black}
+.btn--secondary:visited{
+background-color:#6f777d;
+color:black}
+.btn--secondary:hover{
+text-decoration:underline;
+}
+
+
 .btn--inverse
 {
 background-color:#fff;
@@ -2422,7 +2434,7 @@ color:white;
 animation:intro 0.3s both;
 -webkit-animation-delay:0.45s;
 animation-delay:0.45s;
-background-color:#352afa
+background-color:blue; /*#352afa*/
 }
 .page__footer::after
 {
@@ -2464,7 +2476,7 @@ text-decoration:underline
 }
 .page__footer .fas,.page__footer .fab,.page__footer .far,.page__footer .fal
 {
-color:#646769
+color:blue;/*#646769*/
 }
 .page__footer-copyright
 {
@@ -3552,9 +3564,10 @@ font-size:1em
 {
 margin:0 0 1.3em
 }
+
 .page__content a:not(.btn):not(#goog-wm-sb):hover
 {
-text-decoration:underline
+	text-decoration:underline
 }
 .page__content a:not(.btn):not(#goog-wm-sb):hover img
 {
@@ -5991,7 +6004,7 @@ font-size:16pt !important}
 .blue__border{
 	border-bottom: 3px solid blue; 
 	margin-bottom:10px;
-	padding-top: 10px;
+	padding-top: 0px;
 }
 
 .funding__imgs{
@@ -6011,4 +6024,35 @@ font-size:16pt !important}
   font-size: 28px;
   color:white;
   text-align:right;
+}
+
+.Publications {
+  	border-right: 40px;
+  border-right: 40px;
+  padding-right: 300px;
+  padding-left: 100px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-family: "Times New Roman", Times, serif;
+  font-style: Times;
+  font-size: 20px;
+  color:#000;
+
+   }
+
+   .HP {
+  	border-right: 40px;
+  border-right: 40px;
+  padding-right: 300px;
+  padding-left: 50px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-family: "Times New Roman", Times, serif;
+  font-style: Times;
+  font-size: 28px;
+  font-weight: bold;
+  color:#000;
+   }
+.PUB{
+	color:#000;
 }
